@@ -21,6 +21,8 @@ A developer tool, repurposed for research. Write faster with file‑first AI tha
 
 Developers got faster because AI agents work on files, not vague chats and long manuscripts. The same idea applies to papers. Agents draft sections, track sources, create citations, and produce tables with previews you can audit.
 
+In this guide, we show how to repurpose [Cursor](https://cursor.com/)—an AI coding editor used widely by developers—for scientific writing. The same file‑first approach enables precise edits, tracked sources, reproducible calculations, and clean outputs you can audit.
+
 **Before vs after**
 
 | Old way | File‑first way |
