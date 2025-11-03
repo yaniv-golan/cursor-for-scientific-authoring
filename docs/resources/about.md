@@ -15,7 +15,7 @@ This site documents practical workflows for using Cursor and coding agents in sc
 
 Release notes and notable changes are tracked in the Changelog.
 
-- See the [Changelog]({% link changelog.md %}).
+- See the [Changelog]({{ site.baseurl }}{% link changelog.md %}).
 - Report issues or propose improvements via GitHub issues or pull requests.
 
 Notes for contributors:

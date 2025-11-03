@@ -7,3 +7,23 @@ pre code.language-text {
 }
 
 /* Keep other code blocks unchanged */
+
+/* Print styles for one-page output */
+@media print {
+  .side-bar, .page-header, .search, .site-footer { display: none !important; }
+  .main-content { max-width: 100% !important; margin: 0 !important; padding: 0 0.5in !important; }
+  a[href]:after { content: "" !important; } /* avoid printing raw URLs */
+  pre, code { white-space: pre-wrap !important; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+/* Simple print button */
+.print-button {
+  display: inline-block;
+  margin: 0.5rem 0 1rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f8f9fa;
+  cursor: pointer;
+}

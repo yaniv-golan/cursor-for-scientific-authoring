@@ -15,3 +15,5 @@ Consider structuring each workflow with:
 1. **Problem framing** – context, constraints, and desired outcomes.
 2. **Cursor-driven approach** – prompts, agent setups, and iteration loops.
 3. **Validation** – reproducibility safeguards, review steps, and hand-offs.
+
+Coming soon: curated, end-to-end workflow guides you can follow step by step. In the meantime, start with the First‑Hour and Quick Start pages.

@@ -10,3 +10,4 @@ nav_order: 20
 
 Intermediate topics like Git and Branching.
 
+Coming soon: practical branching patterns, collaborating on drafts, and light CI for exports.

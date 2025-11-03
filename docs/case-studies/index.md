@@ -13,3 +13,5 @@ Collect real-world stories describing how scientists apply Cursor. Each case stu
 - Cursor workflows used and why they were effective.
 - Measurable outcomes and lessons learned.
 - Constraints, failures, and mitigation tactics.
+
+Coming soon: concrete case studies from early adopters in multiple domains. Interested in contributing one? Open an issue in the repository.
