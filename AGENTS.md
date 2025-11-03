@@ -53,6 +53,12 @@ Convenience commands
   - Example: `{{ site.baseurl }}{% link guide/core/accuracy.md %}`.
   - Avoid root‑relative `](/guide/...)`, bare relative paths, or `relative_url` on published pages. This prevents 404s under GitHub Pages `baseurl` and survives file renames.
 
+Internal links must be clickable
+- Wrap the link tag inside Markdown link syntax, otherwise it renders as plain text.
+  - Correct: `[Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})`
+  - Incorrect (renders as text): `{{ site.baseurl }}{% link guide/core/accuracy.md %}`
+- For assets under `docs/assets/`, also wrap the path: `[Download]({{ site.baseurl }}/assets/downloads/file.zip)`
+
 ## Publishing & Versioning (for agents)
 
 - Publishing is automated via GitHub Actions (`.github/workflows/pages.yml`). Any push to `main` that changes `docs/**`, `docs/_config.yml`, `assets/**`, `references/**`, or `ops/**` will build and deploy the site to GitHub Pages.

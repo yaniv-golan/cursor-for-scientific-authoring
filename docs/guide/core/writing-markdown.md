@@ -20,12 +20,11 @@ What this covers
 - Safe, review‑first export to DOCX/PDF via Pandoc (optional)
 
 Before you start
-- Use the minimal project layout from [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %}).  
-  [Download the starter project (zip)]({{ site.baseurl }}/assets/downloads/minimal-project.zip)
+- Use the minimal project layout from Quick Start: see `content/guide/core/quick-start.md` and the example at `content/templates/minimal-project/README.md`.
 - Keep this repo’s layout (docs/content/raw) out of your paper project; it’s for this guide only.
 
 IMRaD scaffolding
-- Start from an outline file like `manuscript/sections/00-outline.md` (see a template in the starter project zip above).
+- Start from an outline file like `manuscript/sections/00-outline.md` (see template at `content/templates/minimal-project/manuscript/sections/00-outline.md`).
 - Use one Markdown file per section (e.g., `01-introduction.md`, `02-methods.md`, `03-results.md`, `04-discussion.md`).
 - Prefer file‑scoped prompts when drafting or refining sections so edits remain auditable.
 
@@ -56,7 +55,7 @@ Figures and tables
 - Save paper‑ready figures to `manuscript/figures/` and tables to `manuscript/tables/`.
 - Embed an image: `![Caption with units](../figures/figure-01.png)`.
 - Include a Markdown table file via copy/paste or link; keep captions specific and informative.
-- For numeric results that require computing, follow the pattern in [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %}): use code to calculate; show code and outputs; explain in plain language.
+- For numeric results that require computing, follow the pattern in `content/guide/core/analysis.md`: use code to calculate; show code and outputs; explain in plain language.
 
 Agent help with figures and tables (friendly shortcuts)
 - Tables (no‑code):
@@ -93,7 +92,7 @@ Agent help with figures and tables (friendly shortcuts)
 Equations and callouts
 - Inline math with `$...$` and display math with `$$...$$` (if your export route supports LaTeX math).
 - Use callouts sparingly to highlight constraints or decisions.
- - Equation numbering is optional and covered later in Endgame.
+ - Equation numbering is optional and covered later in Endgame: see `content/guide/core/endgame.md`.
 
 Math basics (optional)
 - Inline example: “The mean is `$\mu$` and the variance is `$\sigma^2$`.”
@@ -132,10 +131,9 @@ Citations and references
 - Store bibliographic data in `references/` as either BibTeX (`library.bib`) or CSL JSON (`library.json`). Keep `references/` as the bibliographic source of truth.
 - Cite with Pandoc syntax: `[@key]` for parenthetical, `@key` for narrative, and `[-@key]` to suppress author.
 - Add page numbers with `[@key, p. 12]`.
-- Maintain a simple `claims.md` log at your project root for non‑obvious assertions and verify them; see [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %}).
+- Maintain a simple `claims.md` log at your project root for non‑obvious assertions and verify them; see `content/guide/core/accuracy.md`.
 
-<details>
-<summary><strong>Export (review‑first, optional)</strong></summary>
+Export (review‑first, optional)
 - Share Markdown during early drafting (recommended). When you need DOCX/PDF:
   - Ensure you have a `.bib` or `.json` file under `references/` and a journal style CSL (e.g., `references/style.csl`).
   - If Pandoc is available, you can export with `--citeproc` to format citations.
@@ -186,22 +184,20 @@ pandoc manuscript/sections/*.md \
 ```
 
 Reproducibility guardrails
-
-</details>
 - Keep analysis code separate (under `analysis/`) and save generated figures/tables deterministically.
 - Record seeds for any stochastic steps; save exact scripts under `analysis/scripts/`.
 - Capture environments with lockfiles (small files that record exact package versions) where applicable (`environment.yml`, `renv.lock`).
 
 Cross‑links
-- [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
-- [Accuracy and claims]({{ site.baseurl }}{% link guide/core/accuracy.md %})
-- [Managing sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
-- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
-- [First‑hour exercise]({{ site.baseurl }}{% link getting-started/first-hour.md %})
+- Quick Start: `content/guide/core/quick-start.md`
+- Accuracy and claims: `content/guide/core/accuracy.md`
+- Managing sources: `content/guide/core/managing-sources.md`
+- Analysis patterns: `content/guide/core/analysis.md`
+- Data governance: `content/policies/data-governance.md`
+- First‑hour exercise: `content/exercises/first-hour.md`
 
 What’s next
-- [Proceed to Accuracy →]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- Proceed to Accuracy: `content/guide/core/accuracy.md`
 
 Change log
 - 2025-11-03: Added audience one‑liner; fixed front matter formatting.
