@@ -193,15 +193,15 @@ Reproducibility guardrails
 - Capture environments with lockfiles (small files that record exact package versions) where applicable (`environment.yml`, `renv.lock`).
 
 Cross‑links
-- Quick Start: {{ site.baseurl }}{% link guide/core/quick-start.md %}
-- Accuracy and claims: {{ site.baseurl }}{% link guide/core/accuracy.md %}
-- Managing sources: {{ site.baseurl }}{% link guide/core/managing-sources.md %}
-- Analysis patterns: {{ site.baseurl }}{% link guide/core/analysis.md %}
-- Data governance: {{ site.baseurl }}{% link resources/data-governance.md %}
-- First‑hour exercise: {{ site.baseurl }}{% link getting-started/first-hour.md %}
+- [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
+- [Accuracy and claims]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- [Managing sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
+- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
+- [First‑hour exercise]({{ site.baseurl }}{% link getting-started/first-hour.md %})
 
 What’s next
-- Proceed to Accuracy: {{ site.baseurl }}{% link guide/core/accuracy.md %}
+- [Proceed to Accuracy →]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 
 Change log
 - 2025-11-03: Added audience one‑liner; fixed front matter formatting.

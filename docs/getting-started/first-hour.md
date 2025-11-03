@@ -64,7 +64,7 @@ Choose your path:
      outputs; explain the result in plain language. Save code in
      analysis/scripts/01-table.py (or .R).
      ```
-     See the Analysis guide → {{ site.baseurl }}{% link guide/core/analysis.md %}}.
+     [See the Analysis guide →]({{ site.baseurl }}{% link guide/core/analysis.md %}).
 
 Part C — Optional figure (10–15 minutes)
 Choose your path:
@@ -129,14 +129,14 @@ Validation checklist
 - If you chose to export, the file opens cleanly and includes citations formatted by your CSL.
 
 Cross‑links
-- Quick Start: {{ site.baseurl }}{% link guide/core/quick-start.md %}
-- Writing in Markdown: {{ site.baseurl }}{% link guide/core/writing-markdown.md %}
-- Accuracy and claims: {{ site.baseurl }}{% link guide/core/accuracy.md %}
-- Analysis patterns: {{ site.baseurl }}{% link guide/core/analysis.md %}
-- Data governance: {{ site.baseurl }}{% link resources/data-governance.md %}
+- [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
+- [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
+- [Accuracy and claims]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
 
 What’s next
-- Proceed to Writing in Markdown: {{ site.baseurl }}{% link guide/core/writing-markdown.md %}
+- [Proceed to Writing in Markdown →]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
 
 Change log
 - 2025-11-03: Marked complete after refinement; tightened guardrails and cross-links.

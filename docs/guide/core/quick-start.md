@@ -167,14 +167,14 @@ Safety and accuracy guardrails
 - Prefer local processing for sensitive data; review provider settings ({{ site.baseurl }}{% link resources/data-governance.md %}).
 
 Cross‑links
-- Writing in Markdown: {{ site.baseurl }}{% link guide/core/writing-markdown.md %}
-- Accuracy and claims: {{ site.baseurl }}{% link guide/core/accuracy.md %}
-- Managing sources: {{ site.baseurl }}{% link guide/core/managing-sources.md %}
-- Analysis patterns: {{ site.baseurl }}{% link guide/core/analysis.md %}
-- Data governance: {{ site.baseurl }}{% link resources/data-governance.md %}
+- [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
+- [Accuracy and claims]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- [Managing sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
+- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
 
 What’s next
-- Do the guided exercise: {{ site.baseurl }}{% link getting-started/first-hour.md %}
+- [Do the guided exercise →]({{ site.baseurl }}{% link getting-started/first-hour.md %})
 
 Change log
 - 2025-11-03: Standardized all long prompts to fenced code blocks for easy copy/paste.
