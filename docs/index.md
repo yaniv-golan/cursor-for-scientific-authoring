@@ -11,10 +11,11 @@ Welcome to the Cursor for Scientists playbook. This guide helps research teams c
 
 ## How to use this site
 
-- **Getting Started** introduces personas, setup steps, and quick wins.
-- **Workflows** breaks down end-to-end research activities accelerated with Cursor.
-- **Case Studies** showcases real-world narratives from the community.
-- **Resources** gathers style guides, checklists, and reference material.
+- Getting Started: see {% link getting-started/overview.md %}
+- Guide (Core/Plus/Pro): see {% link guide/index.md %}
+- Workflows: see {% link workflows/index.md %}
+- Case Studies: see {% link case-studies/index.md %}
+- Resources: see {% link resources/index.md %}
 
 We are building this playbook collaboratively. Contributions are welcome—see the repository README to get involved.
 
@@ -22,9 +23,13 @@ We are building this playbook collaboratively. Contributions are welcome—see t
 
 - Drafts live in `content/` and are iterated until stable.
 - Published pages live in `docs/` (this site), built by GitHub Pages.
-- The team maintains an internal claims catalog while authoring this guide. For your own projects, keep a simple `claims.md` at the project root to track non‑obvious assertions and their sources.
 - Agents and contributors should follow the reference TOC at `content/reference-toc.md` and the rules in `AGENTS.md`.
 
 Note: this repository’s layout (docs/content/raw) is for producing the guide, not a template for research projects.
+
+### Navigation / TOC
+
+- The left sidebar is the full site table of contents generated from page front matter. On narrow screens it collapses behind the menu icon.
+- Prefer the section links above for a quick jump, or browse via the sidebar TOC.
 
 > Version info: see the {% link resources/about.md %} page for the current version and changelog.
