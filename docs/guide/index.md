@@ -43,7 +43,7 @@ Safety and accuracy at a glance
 
 Cross‑links
 - [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
-- [First‑Hour Exercise]({{ site.baseurl }}{% link exercises/first-hour.md %})
+- [First‑Hour Exercise]({{ site.baseurl }}{% link getting-started/first-hour.md %})
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 - [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})

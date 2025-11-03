@@ -1,5 +1,5 @@
 ---
-title: Endgame: Journal‑Ready Output
+title: "Endgame: Journal‑Ready Output"
 layout: default
 grand_parent: Guide
 parent: Core

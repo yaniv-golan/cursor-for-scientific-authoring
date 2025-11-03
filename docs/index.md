@@ -2,7 +2,7 @@
 layout: default
 title: Cursor for Scientists
 nav_order: 1
-has_children: true
+has_children: "true"
 ---
 
 

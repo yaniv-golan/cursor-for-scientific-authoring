@@ -74,6 +74,13 @@ def read_front_matter(text: str) -> Tuple[Dict[str, str], str]:
 def write_front_matter(fm: Dict[str, str], body: str) -> str:
     out = ["---"]
     for k, v in fm.items():
+        # Quote values that can confuse YAML (e.g., titles with colons)
+        if isinstance(v, str):
+            needs_quotes = ":" in v or v.strip().lower() in {"yes", "no", "true", "false", "on", "off"}
+            if needs_quotes:
+                v = v.replace('"', '\\"')
+                out.append(f'{k}: "{v}"')
+                continue
         out.append(f"{k}: {v}")
     out.append("---")
     out.append("")
