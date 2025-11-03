@@ -68,8 +68,8 @@ One‑page “red team your draft” list
 - Would a skeptical reviewer find missing citations? Add them now
 
 Cross‑links
-- Quick Start: {{ site.baseurl }}{% link guide/core/quick-start.md %}
-- Accuracy: {{ site.baseurl }}{% link guide/core/accuracy.md %}
-- Writing in Markdown: {{ site.baseurl }}{% link guide/core/writing-markdown.md %}
-- Analysis patterns: {{ site.baseurl }}{% link guide/core/analysis.md %}
-- Data governance: {{ site.baseurl }}{% link resources/data-governance.md %}
+- [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
+- [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
+- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})

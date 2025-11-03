@@ -96,11 +96,10 @@ Part D — Citation audit and export (10 minutes)
    claims.md. Flag missing sources and list them in claims.md. Do not
    invent citations.
    ```
-   See the accuracy guide: {{ site.baseurl }}{% link guide/core/accuracy.md %}.
+   See the [accuracy guide]({{ site.baseurl }}{% link guide/core/accuracy.md %}).
 2) Export a shareable draft:
    - Share Markdown directly for now (recommended in the first hour).
-   - PDF/DOCX export (with bibliography and CSL) is covered here:  
-     {{ site.baseurl }}{% link guide/core/writing-markdown.md %}
+   - PDF/DOCX export (with bibliography and CSL) is covered in [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %}).
 
 Optional (advanced, file‑scoped agent prompt — review before running)
 - Agents typically propose safe commands, but it’s good practice to review them first. If unsure, ask the agent to explain each step in plain language before approving.
@@ -115,10 +114,10 @@ wait for my approval before running.
 Reproducibility and safety guardrails
 - File‑scoped prompts; avoid ad‑hoc chat memory.
 - No‑code path: restrict to transcription; mark derived calculations as TODOs for Analysis.
-- Low‑code path: “use code to calculate”; show code and outputs; explain in plain language ({{ site.baseurl }}{% link guide/core/analysis.md %}).
+- Low‑code path: “use code to calculate”; show code and outputs; explain in plain language (see [Analysis guide]({{ site.baseurl }}{% link guide/core/analysis.md %})).
 - Set seeds for stochastic steps; save exact scripts under `analysis/scripts/`.
 - Capture environments as lockfiles where applicable (e.g., `environment.yml`, `renv.lock`).
-- Prefer local processing for sensitive data; see {{ site.baseurl }}{% link resources/data-governance.md %}.
+- Prefer local processing for sensitive data; see [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %}).
 - Track non‑obvious assertions in `claims.md` and cite accordingly.
 
 Validation checklist

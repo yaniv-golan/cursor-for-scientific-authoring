@@ -20,7 +20,7 @@ What this covers
 - Safe, review‑first export to DOCX/PDF via Pandoc (optional)
 
 Before you start
-- Use the minimal project layout from Quick Start: {{ site.baseurl }}{% link guide/core/quick-start.md %}.  
+- Use the minimal project layout from [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %}).  
   [Download the starter project (zip)]({{ site.baseurl }}/assets/downloads/minimal-project.zip)
 - Keep this repo’s layout (docs/content/raw) out of your paper project; it’s for this guide only.
 
@@ -56,7 +56,7 @@ Figures and tables
 - Save paper‑ready figures to `manuscript/figures/` and tables to `manuscript/tables/`.
 - Embed an image: `![Caption with units](../figures/figure-01.png)`.
 - Include a Markdown table file via copy/paste or link; keep captions specific and informative.
-- For numeric results that require computing, follow the pattern in {{ site.baseurl }}{% link guide/core/analysis.md %}: use code to calculate; show code and outputs; explain in plain language.
+- For numeric results that require computing, follow the pattern in [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %}): use code to calculate; show code and outputs; explain in plain language.
 
 Agent help with figures and tables (friendly shortcuts)
 - Tables (no‑code):
@@ -132,7 +132,7 @@ Citations and references
 - Store bibliographic data in `references/` as either BibTeX (`library.bib`) or CSL JSON (`library.json`). Keep `references/` as the bibliographic source of truth.
 - Cite with Pandoc syntax: `[@key]` for parenthetical, `@key` for narrative, and `[-@key]` to suppress author.
 - Add page numbers with `[@key, p. 12]`.
-- Maintain a simple `claims.md` log at your project root for non‑obvious assertions and verify them; see {{ site.baseurl }}{% link guide/core/accuracy.md %}.
+- Maintain a simple `claims.md` log at your project root for non‑obvious assertions and verify them; see [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %}).
 
 <details>
 <summary><strong>Export (review‑first, optional)</strong></summary>
