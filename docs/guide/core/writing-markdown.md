@@ -200,14 +200,4 @@ Cross‑links
 What’s next
 - [Proceed to Accuracy →]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 
-Change log
-- 2025-11-03: Added audience one‑liner; fixed front matter formatting.
-- 2025-11-03: Standardized long prompt examples to fenced code blocks for easy copy/paste.
-- 2025-11-03: Marked complete; added in-file footnote for Google Docs Markdown support and tightened export/math notes.
-- 2025-11-03: Expanded Google Docs bridge with “Paste from Markdown” / “Copy as Markdown” and a round‑trip workflow.
-- 2025-11-03: Added Google Docs bridge note with Markdown support and source citation.
-- 2025-11-03: Added agent help with math prompts and image-transcription option (environment-dependent).
-- 2025-11-03: Added "Math basics" with examples, tips, and export notes for non-experts.
-- 2025-11-03: First substantial draft: IMRaD scaffolds, citations, safe export prompts, reproducibility guardrails, and cross‑links.
-
 [^google-docs-markdown]: Google Docs Editors Help, “Use Markdown in Google Docs, Slides, & Drawings,” https://support.google.com/docs/answer/12014036?hl=en (accessed 2025-11-03).

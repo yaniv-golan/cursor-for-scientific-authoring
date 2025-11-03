@@ -80,5 +80,4 @@ Cross‑links
 What’s next
 - [Proceed to Analysis patterns →]({{ site.baseurl }}{% link guide/core/analysis.md %})
 
-Change log
-- 2025-11-03: First complete draft with local‑first guidance, approval gating, safe prompt patterns, and cross‑links.
+ 

@@ -176,9 +176,4 @@ Cross‑links
 What’s next
 - [Do the guided exercise →]({{ site.baseurl }}{% link getting-started/first-hour.md %})
 
-Change log
-- 2025-11-03: Standardized all long prompts to fenced code blocks for easy copy/paste.
-- 2025-11-03: Minor editorial polish and clarified change‑preview expectation.
-- 2025-11-03: First full draft; added front matter, first-hour exercise, cross-links, and safety guardrails.
-- 2025-11-03: Removed early provider/API-key details; added AGENTS.md explanation and minimal template; linked sample project folder.
-- 2025-11-03: Added no‑code and low‑code tracks; made figure optional for no‑code users.
+ 

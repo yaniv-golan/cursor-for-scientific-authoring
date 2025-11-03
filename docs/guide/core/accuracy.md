@@ -163,14 +163,3 @@ Cross‑links
 
 What’s next
 - [Proceed to Managing Sources →]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
-
-Change log
-- 2025-11-03: Added audience one‑liner.
-- 2025-11-03: Marked complete; added an optional advanced audit prompt with approval gating and file-scoped constraints.
-- 2025-11-03: Standardized prompt patterns to fenced code blocks for easy copy/paste.
-- 2025-11-03: Emphasized “show code and outputs” and added cross-links to Quick Start and First‑Hour.
-- 2025-11-03: Switched default claims.md template to a simple bullet list; kept table as optional.
-- 2025-11-03: Clarified example; moved explanation outside code block and added a concrete example sentence.
-- 2025-11-03: Added page‑number requirement, no‑code numeric note, claims.md template, and privacy pointer.
-- 2025-11-03: Removed internal repo reference; clarified reader-facing guidance for `claims.md` in user projects.
-- 2025-11-03: First full draft with claims log, read–extract–cite, numeric rubric, and verification checklist.

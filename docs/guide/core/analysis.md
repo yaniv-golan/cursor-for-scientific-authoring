@@ -134,7 +134,3 @@ Cross‑links
 
 What’s next
 - [Proceed to Project Rules with AGENTS.md →]({{ site.baseurl }}{% link guide/core/project-rules.md %})
-
-Change log
-- 2025-11-03: Added audience one‑liner and beginner guidance.
-- 2025-11-03: First complete draft with prompts, Python/R examples, lockfile guidance, seeds, and save locations; added cross‑links and next step.

@@ -133,9 +133,4 @@ Cross‑links
 What’s next
 - [Proceed to Writing in Markdown →]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
 
-Change log
-- 2025-11-03: Marked complete after refinement; tightened guardrails and cross-links.
-- 2025-11-03: Deferred PDF/DOCX export to Writing in Markdown; removed shell example; added optional agent prompt.
-- 2025-11-03: Added success and validation criteria; Pandoc example; env lockfile note.
-- 2025-11-03: First full draft added; step‑by‑step tasks, guardrails, cross‑links.
-- 2025-11-03: Removed early provider/API-key details and repo-layout note.
+ 
