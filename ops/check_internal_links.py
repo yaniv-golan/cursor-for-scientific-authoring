@@ -21,6 +21,8 @@ content_md_pattern = re.compile(r"content/[^)\s`]+\.md")
 
 def find_offenses() -> list[tuple[Path, int, str]]:
     offenses = []
+    # Allowlist of docs/ pages where content/*.md is intentionally mentioned
+    # for contributor guidance rather than reader navigation.
     allow_content_md = {
         Path("docs/resources/about.md"),
         Path("docs/guide/index.md"),
@@ -31,15 +33,16 @@ def find_offenses() -> list[tuple[Path, int, str]]:
             text = path.read_text(encoding="utf-8")
         except Exception:
             continue
+        rel = path.relative_to(ROOT)
         for i, line in enumerate(text.splitlines(), start=1):
             for m in pattern.finditer(line):
                 # Ensure there's a ')' after the end of the match on the same line
                 remainder = line[m.end():]
                 if ")" not in remainder:
-                    offenses.append((path.relative_to(ROOT), i, line.rstrip()))
+                    offenses.append((rel, i, line.rstrip()))
             # Flag repo-path references to content/*.md on published pages
-            if path not in allow_content_md and content_md_pattern.search(line):
-                offenses.append((path.relative_to(ROOT), i, line.rstrip()))
+            if rel not in allow_content_md and content_md_pattern.search(line):
+                offenses.append((rel, i, line.rstrip()))
     return offenses
 
 def main() -> int:
