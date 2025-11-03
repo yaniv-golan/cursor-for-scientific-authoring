@@ -1,3 +1,4 @@
+---
 title: First‑Hour Guided Exercise
 status: complete
 ---

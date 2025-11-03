@@ -22,6 +22,10 @@
 - Keep this repository’s layout (docs/content/raw) as production for the guide only; do not present it as a template for research projects.
 - Prefer file-scoped prompts and grounded edits over free-form chat. Show diffs for substantial changes.
 
+Convenience commands
+- Use `make promote-dry` to preview which `content/**` pages (with `status: complete`) will be published into `docs/**`.
+- Use `make promote` to publish them. To publish just a subset: `make promote-only FILES='content/guide/core/quick-start.md content/guide/core/accuracy.md'`.
+
 ### Prompt formatting for docs (copy/paste friendly)
 - Present any long prompt examples inside fenced code blocks using triple backticks and a neutral language tag like `text` for clean copy/paste.
 - Avoid triple quotes ("""). They are not a Markdown standard and are easier to miscopy. Prefer fenced blocks instead.
