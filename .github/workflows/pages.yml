@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - 'docs/**'
-      - '_config.yml'
+      - 'docs/_config.yml'
       - 'assets/**'
       - 'references/**'
       - 'ops/**'
@@ -51,4 +51,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

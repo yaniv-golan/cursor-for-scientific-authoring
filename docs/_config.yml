@@ -1,0 +1,15 @@
+title: Cursor for Scientists
+description: Practical guidance for researchers using Cursor and AI copilots.
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+url: https://yaniv-golan.github.io
+baseurl: /cursor-for-scientific-authoring
+just_the_docs:
+  logo:
+  aux_links:
+    Project GitHub: https://github.com/yaniv-golan/cursor-for-scientific-authoring
+  footer_content: "Released under the Creative Commons Attribution 4.0 International License."
+nav_order: 1
+version: 0.1.0
+

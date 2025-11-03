@@ -11,11 +11,11 @@ Welcome to the Cursor for Scientists playbook. This guide helps research teams c
 
 ## How to use this site
 
-- Getting Started: see {% link getting-started/overview.md %}
-- Guide (Core/Plus/Pro): see {% link guide/index.md %}
-- Workflows: see {% link workflows/index.md %}
-- Case Studies: see {% link case-studies/index.md %}
-- Resources: see {% link resources/index.md %}
+- Getting Started: see [overview]({{ '/getting-started/overview/' | relative_url }})
+- Guide (Core/Plus/Pro): see [Guide]({{ '/guide/' | relative_url }})
+- Workflows: see [Workflows]({{ '/workflows/' | relative_url }})
+- Case Studies: see [Case Studies]({{ '/case-studies/' | relative_url }})
+- Resources: see [Resources]({{ '/resources/' | relative_url }})
 
 We are building this playbook collaboratively. Contributions are welcome—see the repository README to get involved.
 
