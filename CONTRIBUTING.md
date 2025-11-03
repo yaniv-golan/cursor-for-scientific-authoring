@@ -78,9 +78,25 @@ What the promoter does
   - Ensures `layout: default`, removes `status`
   - Sets `grand_parent`/`parent` for Guide/Core/Plus/Pro; Getting Started; Resources
   - Assigns `nav_order` for core pages (Quick Start=10, Writing Markdown=20, Accuracy=30, Managing Sources=40, Analysis=50, Checklists=60, Project Rules=70, Endgame=80)
-- Internal link tip: prefer `{{ site.baseurl }}{% link <docs-relative-path>.md %}` so links work under the project `baseurl` and survive renames.
-  - Example: `{{ site.baseurl }}{% link guide/core/quick-start.md %}`
-  - Avoid: `](/guide/...)`, `{{ '/path/' | relative_url }}`, or bare relative paths on published pages.
+- Internal links (must be clickable)
+  - Always wrap the link tag inside Markdown link syntax: `[Label]({{ site.baseurl }}{% link <docs-relative-path>.md %})`
+  - Correct: `[Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})`
+  - Incorrect (renders as text): `{{ site.baseurl }}{% link guide/core/quick-start.md %}`
+  - Assets: `[Download]({{ site.baseurl }}/assets/downloads/file.zip)`
+  - Avoid on published pages: `](/guide/...)`, `{{ '/path/' | relative_url }}`, bare relative paths, or repo paths like `content/...`
+
+Link linter (CI and local)
+- CI runs `ops/check_internal_links.py` on every push/PR and fails on:
+  - Bare `{{ site.baseurl }}{% link ... %}` not wrapped in `[](...)` on the same line
+  - `content/*.md` references printed on published pages (small allowlist for contributor notes)
+- Run locally before committing:
+  - `python3 ops/check_internal_links.py`
+- Optional: add a quick git hook (`.git/hooks/pre-commit`):
+  ```sh
+  #!/bin/sh
+  python3 ops/check_internal_links.py || exit 1
+  ```
+  Then `chmod +x .git/hooks/pre-commit`.
 
 Prompt blocks (site rendering)
 - The site’s CSS wraps only code blocks fenced as `text`. Use `text` for prompts intended to be pasted into agents. Keep `markdown` fences only when teaching Markdown itself.
