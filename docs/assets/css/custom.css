@@ -1,0 +1,9 @@
+/* Wrap only fenced code blocks labeled with language `text` */
+.language-text pre,
+pre code.language-text {
+  white-space: pre-wrap;        /* wrap long lines */
+  word-break: break-word;       /* break long words if needed */
+  overflow-wrap: anywhere;      /* allow wrapping anywhere as fallback */
+}
+
+/* Keep other code blocks unchanged */
