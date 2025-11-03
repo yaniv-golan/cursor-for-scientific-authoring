@@ -15,6 +15,11 @@ Thank you for your interest in improving the Cursor for Scientists playbook! We 
 2. If you are drafting new guidance, start from `content/` and promote it into `docs/` when it is ready for publication.
    - See “Promoting drafts to the site” below.
 3. Follow the style guidelines in `docs/resources/style-guide.md` (coming soon).
+4. Prompt formatting for copy/paste:
+   - Use fenced code blocks with language `text` for prompts so they wrap on small screens and copy cleanly.
+   - Keep prompts plain and self-contained: start with a single-line Task, then Safety rules, then Steps.
+   - Include explicit approval gating for changes (e.g., require the user to reply exactly `CONFIRM APPLY`).
+   - Prefer file-scoped constraints (which files/paths may change). Avoid `markdown` fences for prompts.
 4. Run `markdownlint` (or another linter) locally if you have it installed.
 5. Submit a pull request that explains the intent of your change.
 
@@ -76,6 +81,9 @@ What the promoter does
 - Internal link tip: prefer `{{ site.baseurl }}{% link <docs-relative-path>.md %}` so links work under the project `baseurl` and survive renames.
   - Example: `{{ site.baseurl }}{% link guide/core/quick-start.md %}`
   - Avoid: `](/guide/...)`, `{{ '/path/' | relative_url }}`, or bare relative paths on published pages.
+
+Prompt blocks (site rendering)
+- The site’s CSS wraps only code blocks fenced as `text`. Use `text` for prompts intended to be pasted into agents. Keep `markdown` fences only when teaching Markdown itself.
 
 Note: do not modify files in `raw/` (except updating `raw/claims.md` per `AGENTS.md`).
 

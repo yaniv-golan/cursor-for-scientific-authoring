@@ -20,7 +20,7 @@ What to include
 
 Minimal example (copy/paste into your project’s `AGENTS.md`)
 
-```markdown
+```text
 # Project Agent Rules (Paper Title)
 
 Scope: All files in this project.

@@ -27,7 +27,7 @@ Convenience commands
 - Use `make promote` to publish them. To publish just a subset: `make promote-only FILES='content/guide/core/quick-start.md content/guide/core/accuracy.md'`.
 
 ### Prompt formatting for docs (copy/paste friendly)
-- Present any long prompt examples inside fenced code blocks using triple backticks and a neutral language tag like `text` for clean copy/paste.
+- Present any long prompt examples inside fenced code blocks using triple backticks and a neutral language tag like `text` for clean copy/paste (our site CSS wraps only `.language-text`).
 - Avoid triple quotes ("""). They are not a Markdown standard and are easier to miscopy. Prefer fenced blocks instead.
 - Keep prompts plain and self-contained: start with a single-line Task, then Safety rules, then Steps. Avoid internal Markdown formatting inside the prompt text.
 - Include explicit approval gating for any changes (e.g., require the user to reply exactly `CONFIRM APPLY` before renames/moves/installs).
