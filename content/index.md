@@ -10,8 +10,8 @@ status: complete
 
 A developer tool, repurposed for research. Write faster with file‑first AI that shows every change before it lands. No code to start. AI agents code for you when you need numbers.
 
-[Start the First Hour →]({{ '/guide/core/quick-start/' | relative_url }})  
-[See how it works →]({{ '/guide/core/writing-markdown/' | relative_url }})
+[Start the First Hour →]({% link guide/core/quick-start.md %})  
+[See how it works →]({% link guide/core/writing-markdown.md %})
 
 ---
 
@@ -38,7 +38,7 @@ Developers got faster because AI agents work on files, not vague chats and long 
 
 Do this with the no‑code path. Add code later if needed.
 
-[Do the First Hour →]({{ '/guide/core/quick-start/' | relative_url }})
+[Do the First Hour →]({% link guide/core/quick-start.md %})
 
 ---
 
@@ -50,7 +50,7 @@ Do this with the no‑code path. Add code later if needed.
 4. Review a clear preview of changes. Approve. Done.
 
 Learn the Markdown basics in minutes.  
-[See the Markdown guide →]({{ '/guide/core/writing-markdown/' | relative_url }})
+[See the Markdown guide →]({% link guide/core/writing-markdown.md %})
 
 ---
 
@@ -61,7 +61,7 @@ Learn the Markdown basics in minutes.
 - Prefer local processing for sensitive data  
 - Agents propose changes first. You approve before apply.
 
-[Read the accuracy playbook →]({{ '/guide/core/accuracy/' | relative_url }})
+[Read the accuracy playbook →]({% link guide/core/accuracy.md %})
 
 ---
 
@@ -77,7 +77,7 @@ Researchers, students, and collaborators who want less friction and more auditab
 - A local folder for your paper  
 - Optional later: Python or R, Pandoc, LaTeX
 
-[Open Quick Start →]({{ '/guide/core/quick-start/' | relative_url }})
+[Open Quick Start →]({% link guide/core/quick-start.md %})
 
 ---
 
@@ -87,9 +87,9 @@ Researchers, students, and collaborators who want less friction and more auditab
 - Let the agent write small analyses with code and save outputs  
 - Add project rules in `AGENTS.md` to keep edits safe
 
-[Manage sources →]({{ '/guide/core/managing-sources/' | relative_url }})  
-[Run minimal analysis →]({{ '/guide/core/analysis/' | relative_url }})  
-[Project rules →]({{ '/guide/core/project-rules/' | relative_url }})
+[Manage sources →]({% link guide/core/managing-sources.md %})  
+[Run minimal analysis →]({% link guide/core/analysis.md %})  
+[Project rules →]({% link guide/core/project-rules.md %})
 
 ---
 
@@ -97,5 +97,4 @@ Researchers, students, and collaborators who want less friction and more auditab
 
 Cursor is a coding editor with AI agents that read and edit files. While built for coding, it doesn't really care what files it read and write. We repurpose it for science authoring using the versatile Markdown format because file‑first agents give precise, auditable drafts you control.
 
-[Start now →]({{ '/guide/core/quick-start/' | relative_url }})
-
+[Start now →]({% link guide/core/quick-start.md %})
