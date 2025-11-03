@@ -71,14 +71,14 @@ Operational checklists
 - Before sharing: scrub PII, remove secrets, and re‑run citation and claims audits.
 
 Cross‑links
-- Quick Start: `content/guide/core/quick-start.md`
-- Managing Sources: `content/guide/core/managing-sources.md`
-- Accuracy: `content/guide/core/accuracy.md`
-- Analysis patterns: `content/guide/core/analysis.md`
-- Project rules (AGENTS.md): `content/guide/core/project-rules.md`
+- Quick Start: {{ site.baseurl }}{% link guide/core/quick-start.md %}
+- Managing Sources: {{ site.baseurl }}{% link guide/core/managing-sources.md %}
+- Accuracy: {{ site.baseurl }}{% link guide/core/accuracy.md %}
+- Analysis patterns: {{ site.baseurl }}{% link guide/core/analysis.md %}
+- Project rules (AGENTS.md): {{ site.baseurl }}{% link guide/core/project-rules.md %}
 
 What’s next
-- Proceed to Analysis patterns: `content/guide/core/analysis.md`
+- Proceed to Analysis patterns: {{ site.baseurl }}{% link guide/core/analysis.md %}
 
 Change log
 - 2025-11-03: First complete draft with local‑first guidance, approval gating, safe prompt patterns, and cross‑links.

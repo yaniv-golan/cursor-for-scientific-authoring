@@ -47,5 +47,5 @@ Reuse across tools
 - Keep the same rules if you use other IDE assistants; include `@AGENTS.md` and, when relevant, `@content/reference-toc.md` in prompts so tools load the site structure.
 
 Where to start
-- A sample `AGENTS.md` also appears in Quick Start: content/guide/core/quick-start.md:31
+- A sample `AGENTS.md` also appears in Quick Start: {{ site.baseurl }}{% link guide/core/quick-start.md %}
 - Keep `AGENTS.md` minimal; evolve it as your team converges on conventions.
