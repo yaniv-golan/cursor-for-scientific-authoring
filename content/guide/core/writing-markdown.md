@@ -56,19 +56,33 @@ Figures and tables
 Agent help with figures and tables (friendly shortcuts)
 - Tables (no‑code):
   ```text
-  Read data/processed/example.csv and generate a clean Markdown table with columns [A, C, E]. Save to manuscript/tables/example.md and add a specific caption. Do not compute derived statistics.
+  Read data/processed/example.csv and generate a clean Markdown table
+  with columns [A, C, E]. Save to
+  manuscript/tables/example.md and add a specific caption. Do not
+  compute derived statistics.
   ```
 - Tables (low‑code):
   ```text
-  Create analysis/notebooks/01-table.md to load data/processed/example.csv, compute summary stats, and write a paper-ready table to manuscript/tables/example.md. Use code to calculate; show code and outputs. Save code in analysis/scripts/01-table.py (or .R).
+  Create analysis/notebooks/01-table.md to load
+  data/processed/example.csv, compute summary stats, and write a
+  paper-ready table to manuscript/tables/example.md. Use code to
+  calculate; show code and outputs. Save code in
+  analysis/scripts/01-table.py (or .R).
   ```
 - Figures (no‑code):
   ```text
-  Write step-by-step instructions for making a [scatter/bar/line] chart from data/processed/example.csv in Numbers/Excel/Sheets, including which columns, labels, units, and a caption. I will save the output to manuscript/figures/example.png.
+  Write step-by-step instructions for making a [scatter/bar/line]
+  chart from data/processed/example.csv in Numbers/Excel/Sheets,
+  including which columns, labels, units, and a caption. I will save
+  the output to manuscript/figures/example.png.
   ```
 - Figures (low‑code):
   ```text
-  Create analysis/notebooks/02-figure.md that loads data/processed/example.csv and saves a figure to analysis/figures/example.png. Explain what the figure shows in plain language. Save code under analysis/scripts/02-figure.py (or .R). Set a random seed if randomness is used.
+  Create analysis/notebooks/02-figure.md that loads
+  data/processed/example.csv and saves a figure to
+  analysis/figures/example.png. Explain what the figure shows in plain
+  language. Save code under analysis/scripts/02-figure.py (or .R). Set
+  a random seed if randomness is used.
   ```
 
 Equations and callouts
@@ -95,13 +109,17 @@ Agent help with math (friendly shortcuts)
 - You don’t need to memorize LaTeX. Ask the agent to draft or fix math for you.
 - Try one of these file‑scoped prompts:
   ```text
-  From this English description, write both inline and display math and explain symbols briefly: beta hat equals (X transpose X) inverse, times X transpose y.
+  From this English description, write both inline and display math
+  and explain symbols briefly: beta hat equals (X transpose X)
+  inverse, times X transpose y.
   ```
   ```text
-  Convert this equation into LaTeX, then check syntax and suggest a clearer layout: y = m x + b.
+  Convert this equation into LaTeX, then check syntax and suggest a
+  clearer layout: y = m x + b.
   ```
   ```text
-  Review this LaTeX for mistakes and consistency. If anything is ambiguous, ask me questions: $$ y = mx + b $$.
+  Review this LaTeX for mistakes and consistency. If anything is
+  ambiguous, ask me questions: $$ y = mx + b $$.
   ```
 - If your environment supports images (some models or extensions do), you can attach a screenshot of an equation and ask: “Transcribe this into Markdown/LaTeX. If any symbols are unclear, list assumptions and alternatives.” Verify image support in your setup first.
 
@@ -132,7 +150,12 @@ Agent‑assisted export (review first)
 - If anything is unclear, ask the agent to explain each step in plain language before you approve.
 - Suggested file‑scoped prompt:
   ```text
-  Check whether pandoc is available. If not, propose OS-specific install steps without executing. Draft a command to export manuscript/sections/*.md to DOCX (and optionally PDF) with --citeproc, using references/library.bib (or library.json) and references/style.csl. Show the exact command, explain each flag, and wait for my approval before running.
+  Check whether pandoc is available. If not, propose OS-specific
+  install steps without executing. Draft a command to export
+  manuscript/sections/*.md to DOCX (and optionally PDF) with
+  --citeproc, using references/library.bib (or library.json) and
+  references/style.csl. Show the exact command, explain each flag, and
+  wait for my approval before running.
   ```
 
 Example commands (for review and manual execution)

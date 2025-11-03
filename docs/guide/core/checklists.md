@@ -39,18 +39,24 @@ Verification and citation checklist
 Data analysis prompt patterns (generate → run → verify → summarize)
 - Simple‑first (approval‑gated):
   ```text
-  Task: Compute descriptive statistics and one plot from data/processed/example.csv.
+  Task: Compute descriptive statistics and one plot from
+  data/processed/example.csv.
 
   Safety rules:
-  - Propose changes first; do not write files until I reply exactly: CONFIRM APPLY
-  - Only create or modify: analysis/notebooks/**, analysis/figures/**, analysis/tables/**
+  - Propose changes first; do not write files until I reply exactly:
+    CONFIRM APPLY
+  - Only create or modify: analysis/notebooks/**, analysis/figures/**,
+    analysis/tables/**
   - Do not touch: data/raw/**, manuscript/**, references/**
-  - Use code to calculate; show code and outputs; explain in plain language.
+  - Use code to calculate; show code and outputs; explain in plain
+    language.
 
   Steps:
   1) Print a preview of files to be written (paths only)
-  2) Draft analysis/notebooks/example.md with code, printed outputs, and one‑sentence explanation
-  3) On CONFIRM APPLY, write the notebook and save outputs deterministically
+  2) Draft analysis/notebooks/example.md with code, printed outputs,
+     and one‑sentence explanation
+  3) On CONFIRM APPLY, write the notebook and save outputs
+     deterministically
   ```
 
 One‑page “red team your draft” list

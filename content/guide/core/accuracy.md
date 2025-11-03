@@ -30,29 +30,45 @@ File‑scoped prompt patterns
 - Use these copy/paste prompts:
 
   ```text
-  From data/raw/paper1.pdf and data/raw/paper2.pdf, extract the definitions of [term]. Insert a 2–3 sentence paraphrase into manuscript/sections/01-introduction.md with citations, and add any non-obvious claims to claims.md with source links. Keep edits file-scoped and show a clear preview of changes.
+  From data/raw/paper1.pdf and data/raw/paper2.pdf, extract the
+  definitions of [term]. Insert a 2–3 sentence paraphrase into
+  manuscript/sections/01-introduction.md with citations, and add any
+  non-obvious claims to claims.md with source links. Keep edits
+  file-scoped and show a clear preview of changes.
   ```
 
   ```text
-  Scan manuscript/sections/ for quotations or paraphrases. Ensure each has a citation and, if non-obvious, a footnote that points to references/ or claims.md. List any gaps as TODOs in claims.md.
+  Scan manuscript/sections/ for quotations or paraphrases. Ensure each
+  has a citation and, if non-obvious, a footnote that points to
+  references/ or claims.md. List any gaps as TODOs in claims.md.
   ```
 
 Optional (advanced) — audit citations and numbers
 
 ```text
-Task: Audit citations and numeric results for accuracy and reproducibility.
+Task: Audit citations and numeric results for accuracy and
+reproducibility.
 
 Safety rules:
 - Make file-scoped edits only to: manuscript/sections/** and claims.md
-- Do not modify: references/**, manuscript/figures/**, manuscript/tables/**, analysis/**
-- For any derived number, use code to calculate; show code and outputs; explain in plain language.
-- Propose changes first as a preview; do not apply until I reply exactly: CONFIRM APPLY
+- Do not modify: references/**, manuscript/figures/**,
+  manuscript/tables/**, analysis/**
+- For any derived number, use code to calculate; show code and
+  outputs; explain in plain language.
+- Propose changes first as a preview; do not apply until I reply
+  exactly: CONFIRM APPLY
 
 Steps:
-1) Scan manuscript/sections/** for quotes and paraphrases. Add missing citations, including page/section numbers for direct quotes.
-2) Identify non-obvious statements. Add them to claims.md with source, location, and status=unverified. Do not duplicate existing claims.
-3) Find all derived numbers. For each, draft a minimal code snippet that reproduces it. Include the exact input file paths. Place suggested code under analysis/notebooks/ as Markdown code blocks (do not write files yet).
-4) Prepare a clear preview of changes for each touched file showing only minimal insertions/deletions.
+1) Scan manuscript/sections/** for quotes and paraphrases. Add missing
+   citations, including page/section numbers for direct quotes.
+2) Identify non-obvious statements. Add them to claims.md with source,
+   location, and status=unverified. Do not duplicate existing claims.
+3) Find all derived numbers. For each, draft a minimal code snippet
+   that reproduces it. Include the exact input file paths. Place
+   suggested code under analysis/notebooks/ as Markdown code blocks
+   (do not write files yet).
+4) Prepare a clear preview of changes for each touched file showing
+   only minimal insertions/deletions.
 5) Wait for my reply: CONFIRM APPLY before making any file edits.
 ```
 

@@ -27,13 +27,17 @@ Reproducibility guardrails
 Simple‑first prompt (safe; propose before applying)
 
 ```text
-Task: Compute descriptive statistics and one plot from data/processed/example.csv.
+Task: Compute descriptive statistics and one plot from
+data/processed/example.csv.
 
 Safety rules:
-- Propose changes first; do not write files until I reply exactly: CONFIRM APPLY
-- Only create or modify: analysis/notebooks/**, analysis/figures/**, analysis/tables/**
+- Propose changes first; do not write files until I reply exactly:
+  CONFIRM APPLY
+- Only create or modify: analysis/notebooks/**, analysis/figures/**,
+  analysis/tables/**
 - Do not touch: data/raw/**, manuscript/**, references/**
-- Use code to calculate; show code and outputs; explain in plain language.
+- Use code to calculate; show code and outputs; explain in plain
+  language.
 
 Steps:
 1) Print a preview of files to be written (paths only).
@@ -41,7 +45,9 @@ Steps:
    - Code blocks to load CSV, compute summary stats, and plot
    - Printed outputs for all numbers
    - One‑sentence plain‑language explanation
-3) On my CONFIRM APPLY, write the notebook and save the plot to analysis/figures/example.png and a table to analysis/tables/example.md
+3) On my CONFIRM APPLY, write the notebook and save the plot to
+   analysis/figures/example.png and a table to
+   analysis/tables/example.md
 ```
 
 Python example (in‑notebook code)
@@ -100,7 +106,8 @@ Plain‑language definitions
 Optional — validation pass (approval‑gated)
 
 ```text
-Task: Validate that all numbers and figures in manuscript/ come from code.
+Task: Validate that all numbers and figures in manuscript/ come from
+code.
 
 Safety rules:
 - Read-only scan of manuscript/** and analysis/**
@@ -108,8 +115,10 @@ Safety rules:
 
 Steps:
 1) List every number in manuscript/ that lacks a code reference.
-2) For each, propose a minimal code block and exact input path to reproduce it.
-3) Prepare a preview of file-scoped edits to insert code references or TODOs.
+2) For each, propose a minimal code block and exact input path to
+   reproduce it.
+3) Prepare a preview of file-scoped edits to insert code references or
+   TODOs.
 ```
 
 Cross‑links

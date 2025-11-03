@@ -85,21 +85,35 @@ First-hour exercise (copy/paste into Cursor as file-scoped prompts)
    - Put three relevant PDFs into `data/raw/`.
    - Prompt (file-scoped):
      ```text
-     Read the three PDFs in data/raw/. Extract: key research question(s), datasets, methods, and main findings. Draft an IMRaD outline in manuscript/sections/00-outline.md. Use footnotes for non-obvious claims and point footnotes to references/ or claims.md. For any direct quote include page or section numbers. Keep all edits file-scoped and show a clear preview of changes.
+     Read the three PDFs in data/raw/. Extract: key research
+     question(s), datasets, methods, and main findings. Draft an IMRaD
+     outline in manuscript/sections/00-outline.md. Use footnotes for
+     non-obvious claims and point footnotes to references/ or
+     claims.md. For any direct quote, include page or section numbers.
+     Keep all edits file-scoped and show a clear preview of changes.
      ```
 
 3) One table from a CSV — choose your path
    - No‑code path (default):
      - Prompt (file‑scoped):
        ```text
-       Read data/processed/example.csv and convert the first N rows and relevant columns into a clean Markdown table saved at manuscript/tables/example.md. Do not compute derived statistics yet. Add a short plain-language caption.
+       Read data/processed/example.csv and convert the first N rows and
+       relevant columns into a clean Markdown table saved at
+       manuscript/tables/example.md. Do not compute derived statistics
+       yet. Add a short plain-language caption.
        ```
    - Low‑code path (optional):
      - Prompt (file‑scoped):
        ```text
-       Propose changes first. Do not write files until I reply exactly: CONFIRM APPLY.
+       Propose changes first. Do not write files until I reply exactly:
+       CONFIRM APPLY.
 
-       Create analysis/notebooks/01-table.md that loads data/processed/example.csv, computes summary statistics with code, and writes a paper-ready Markdown table to manuscript/tables/example.md. Use code to calculate and show code and outputs. Save code under analysis/scripts/01-table.py (or .R).
+       Create analysis/notebooks/01-table.md that loads
+       data/processed/example.csv, computes summary statistics with
+       code, and writes a paper-ready Markdown table to
+       manuscript/tables/example.md. Use code to calculate and show
+       code and outputs. Save code under analysis/scripts/01-table.py
+       (or .R).
        ```
        See content/guide/core/analysis.md.
 
@@ -107,20 +121,33 @@ First-hour exercise (copy/paste into Cursor as file-scoped prompts)
    - No‑code path (default):
      - Prompt (file‑scoped):
        ```text
-       Write step-by-step instructions for making a [scatter/bar/line] chart from data/processed/example.csv in Numbers/Excel/Sheets (which columns, chart type, labels, units). Provide the figure caption text. I will create the chart manually and save as manuscript/figures/example.png.
+       Write step-by-step instructions for making a [scatter/bar/line]
+       chart from data/processed/example.csv in Numbers/Excel/Sheets
+       (which columns, chart type, labels, units). Provide the figure
+       caption text. I will create the chart manually and save as
+       manuscript/figures/example.png.
        ```
    - Low‑code path (optional):
      - Prompt (file‑scoped):
        ```text
-       Propose changes first. Do not write files until I reply exactly: CONFIRM APPLY.
+       Propose changes first. Do not write files until I reply exactly:
+       CONFIRM APPLY.
 
-       Create analysis/notebooks/02-figure.md that loads data/processed/example.csv and saves a figure to analysis/figures/example.png. Include code and the resulting plot preview; describe what it shows in plain language. Save code under analysis/scripts/02-figure.py (or .R). Set a random seed if randomness is used.
+       Create analysis/notebooks/02-figure.md that loads
+       data/processed/example.csv and saves a figure to
+       analysis/figures/example.png. Include code and the resulting
+       plot preview; describe what it shows in plain language. Save
+       code under analysis/scripts/02-figure.py (or .R). Set a random
+       seed if randomness is used.
        ```
 
 5) Citation audit
    - Prompt (file-scoped):
      ```text
-     Scan manuscript/sections/ for quotations/paraphrases. For each, add a citation and a footnote pointing to references/ or claims.md. Flag any statement that lacks a source. Do not invent citations. Summarize gaps in claims.md.
+     Scan manuscript/sections/ for quotations/paraphrases. For each,
+     add a citation and a footnote pointing to references/ or
+     claims.md. Flag any statement that lacks a source. Do not invent
+     citations. Summarize gaps in claims.md.
      ```
      See Accuracy for details (content/guide/core/accuracy.md).
 
