@@ -25,10 +25,9 @@ Choose your track
 - Low‑code (optional): let the agent generate and run Python/R to calculate statistics and save a figure. Recommended if you already have Python/R. See Analysis (`content/guide/core/analysis.md`).
 
 Prerequisites (Day‑0)
-- Cursor installed and signed in; model selected in Composer.
+- Cursor installed and signed in; use default settings in Composer.
 - Local folder chosen for your paper project.
 - Optional for later analysis: Python or R; Pandoc; LaTeX (for journal‑style PDFs).
- - Model access: for your first session, use Cursor’s built‑in provider. Custom API keys can disable some Agent features; you can switch later if needed.
 
 What is AGENTS.md (1 minute)
 - A short, human-readable rules file at the project root that tells coding agents how to work safely on your paper (file‑first edits, citation rules, and acceptance criteria).
