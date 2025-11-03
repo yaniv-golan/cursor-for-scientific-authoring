@@ -1,7 +1,10 @@
 ---
 title: Exploratory Branching For Alternates (Optional)
-status: complete
+layout: default
+grand_parent: Guide
+parent: Plus
 ---
+
 
 # Exploratory Branching For Alternates (Optional)
 

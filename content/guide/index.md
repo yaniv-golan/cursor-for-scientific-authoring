@@ -1,6 +1,6 @@
 ---
 title: Start Here — Guide Overview
-status: draft
+status: complete
 ---
 
 # Welcome
@@ -41,15 +41,15 @@ Safety and accuracy at a glance
 - Prefer local processing for sensitive data; review data‑governance notes early.
 
 Cross‑links
-- Quick Start: `content/guide/core/quick-start.md`
-- First‑Hour Exercise: `content/exercises/first-hour.md`
-- Writing in Markdown: `content/guide/core/writing-markdown.md`
-- Accuracy: `content/guide/core/accuracy.md`
-- Data Governance: `content/policies/data-governance.md`
-- Analysis (optional, low‑code): `content/guide/core/analysis.md`
+- [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
+- [First‑Hour Exercise]({{ site.baseurl }}{% link exercises/first-hour.md %})
+- [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
+- [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [Analysis (optional, low‑code)]({{ site.baseurl }}{% link guide/core/analysis.md %})
 
 What’s next
-- Jump to Quick Start: `content/guide/core/quick-start.md`
+- Jump to [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
 
 Change log
-- 2025-11-03: Initial overview page drafted for non‑coders; added scope, outcomes, expectations, and cross‑links.
+- 2025-11-03: Initial overview page drafted for non‑coders; added scope, outcomes, expectations, and cross‑links; marked page complete.

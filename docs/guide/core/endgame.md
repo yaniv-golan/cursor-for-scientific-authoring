@@ -1,7 +1,11 @@
 ---
 title: Endgame: Journal‑Ready Output
-status: complete
+layout: default
+grand_parent: Guide
+parent: Core
+nav_order: 80
 ---
+
 
 # Endgame: Journal‑Ready Output
 

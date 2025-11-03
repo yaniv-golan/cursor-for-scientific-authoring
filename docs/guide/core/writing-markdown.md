@@ -20,12 +20,11 @@ What this covers
 - Safe, review‑first export to DOCX/PDF via Pandoc (optional)
 
 Before you start
-- Use the minimal project layout from [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %}).  
-  [Download the starter project (zip)]({{ site.baseurl }}/assets/downloads/minimal-project.zip)
+- Use the minimal project layout from [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %}).
 - Keep this repo’s layout (docs/content/raw) out of your paper project; it’s for this guide only.
 
 IMRaD scaffolding
-- Start from an outline file like `manuscript/sections/00-outline.md` (see a template in the starter project zip above).
+- Start from an outline file like `manuscript/sections/00-outline.md` (see the starter described in [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})).
 - Use one Markdown file per section (e.g., `01-introduction.md`, `02-methods.md`, `03-results.md`, `04-discussion.md`).
 - Prefer file‑scoped prompts when drafting or refining sections so edits remain auditable.
 
@@ -93,7 +92,7 @@ Agent help with figures and tables (friendly shortcuts)
 Equations and callouts
 - Inline math with `$...$` and display math with `$$...$$` (if your export route supports LaTeX math).
 - Use callouts sparingly to highlight constraints or decisions.
- - Equation numbering is optional and covered later in Endgame.
+- Equation numbering is optional and covered later in [Endgame]({{ site.baseurl }}{% link guide/core/endgame.md %}).
 
 Math basics (optional)
 - Inline example: “The mean is `$\mu$` and the variance is `$\sigma^2$`.”
@@ -191,13 +190,23 @@ Reproducibility guardrails
 
 Cross‑links
 - [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
-- [Accuracy and claims]({{ site.baseurl }}{% link guide/core/accuracy.md %})
-- [Managing sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
-- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
-- [First‑hour exercise]({{ site.baseurl }}{% link getting-started/first-hour.md %})
+- [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
+- [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [First‑Hour exercise]({{ site.baseurl }}{% link getting-started/first-hour.md %})
 
 What’s next
-- [Proceed to Accuracy →]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- Proceed to [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+
+Change log
+- 2025-11-03: Added audience one‑liner; fixed front matter formatting.
+- 2025-11-03: Standardized long prompt examples to fenced code blocks for easy copy/paste.
+- 2025-11-03: Marked complete; added in-file footnote for Google Docs Markdown support and tightened export/math notes.
+- 2025-11-03: Expanded Google Docs bridge with “Paste from Markdown” / “Copy as Markdown” and a round‑trip workflow.
+- 2025-11-03: Added Google Docs bridge note with Markdown support and source citation.
+- 2025-11-03: Added agent help with math prompts and image-transcription option (environment-dependent).
+- 2025-11-03: Added "Math basics" with examples, tips, and export notes for non-experts.
+- 2025-11-03: First substantial draft: IMRaD scaffolds, citations, safe export prompts, reproducibility guardrails, and cross‑links.
 
 [^google-docs-markdown]: Google Docs Editors Help, “Use Markdown in Google Docs, Slides, & Drawings,” https://support.google.com/docs/answer/12014036?hl=en (accessed 2025-11-03).

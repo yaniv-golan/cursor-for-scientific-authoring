@@ -15,9 +15,9 @@ Success criteria
 - A shareable export (Markdown recommended). PDF/DOCX export comes later.
 
 Before you start (5 minutes)
-- Open your paper workspace (a local folder you created—see example layout in `content/guide/core/quick-start.md`).
+- Open your paper workspace (a local folder you created—see the example layout in [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})).
 - Ensure Cursor is signed in and a model is selected in Composer.
-- Create a minimal `AGENTS.md` that captures citation and accuracy rules (see `content/guide/core/project-rules.md`).
+- Create a minimal `AGENTS.md` that captures citation and accuracy rules (see [Project Rules]({{ site.baseurl }}{% link guide/core/project-rules.md %})).
 
 Part A — IMRaD outline from 3 PDFs (15–20 minutes)
 1) Place three relevant PDFs under `data/raw/`.
@@ -31,7 +31,7 @@ Part A — IMRaD outline from 3 PDFs (15–20 minutes)
    changes.
    ```
 3) Check that quotes/paraphrases have citations. Add gaps to
-   `claims.md` for follow‑up (see `content/guide/core/accuracy.md`).
+   `claims.md` for follow‑up (see [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})).
 
 Part B — One table (10–15 minutes)
 Choose your path:
@@ -55,7 +55,7 @@ Choose your path:
      outputs; explain the result in plain language. Save code in
      analysis/scripts/01-table.py (or .R).
      ```
-     See content/guide/core/analysis.md.
+    See [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %}).
 
 Part C — Optional figure (10–15 minutes)
 Choose your path:
@@ -87,10 +87,10 @@ Part D — Citation audit and export (10 minutes)
    claims.md. Flag missing sources and list them in claims.md. Do not
    invent citations.
    ```
-   See `content/guide/core/accuracy.md`.
+    See [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %}).
 2) Export a shareable draft:
    - Share Markdown directly for now (recommended in the first hour).
-   - PDF/DOCX export (with bibliography and CSL) is covered in `content/guide/core/writing-markdown.md`.
+- PDF/DOCX export (with bibliography and CSL) is covered in [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %}).
 
 Optional (advanced, file‑scoped agent prompt — review before running)
 - Agents typically propose safe commands, but it’s good practice to review them first. If unsure, ask the agent to explain each step in plain language before approving.
@@ -105,10 +105,10 @@ wait for my approval before running.
 Reproducibility and safety guardrails
 - File‑scoped prompts; avoid ad‑hoc chat memory.
 - No‑code path: restrict to transcription; mark derived calculations as TODOs for Analysis.
-- Low‑code path: “use code to calculate”; show code and outputs; explain in plain language (`content/guide/core/analysis.md`).
+- Low‑code path: “use code to calculate”; show code and outputs; explain in plain language ([Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})).
 - Set seeds for stochastic steps; save exact scripts under `analysis/scripts/`.
 - Capture environments as lockfiles where applicable (e.g., `environment.yml`, `renv.lock`).
-- Prefer local processing for sensitive data; see `content/policies/data-governance.md`.
+- Prefer local processing for sensitive data; see [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %}).
 - Track non‑obvious assertions in `claims.md` and cite accordingly.
 
 Validation checklist
@@ -118,15 +118,15 @@ Validation checklist
 - `claims.md` contains follow‑ups for any missing sources.
 - If you chose to export, the file opens cleanly and includes citations formatted by your CSL.
 
-Cross‑links
-- Quick Start: `content/guide/core/quick-start.md`
-- Writing in Markdown: `content/guide/core/writing-markdown.md`
-- Accuracy and claims: `content/guide/core/accuracy.md`
-- Analysis patterns: `content/guide/core/analysis.md`
-- Data governance: `content/policies/data-governance.md`
+Cross-links
+- [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
+- [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
+- [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
 
 What’s next
-- Proceed to Writing in Markdown: `content/guide/core/writing-markdown.md`
+- Proceed to [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
 
 Change log
 - 2025-11-03: Marked complete after refinement; tightened guardrails and cross-links.

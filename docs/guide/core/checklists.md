@@ -71,5 +71,5 @@ Cross‑links
 - [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
-- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
+- [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})

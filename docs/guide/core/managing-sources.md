@@ -96,11 +96,18 @@ Cross‑links
 - [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
-- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Project rules (AGENTS.md)]({{ site.baseurl }}{% link guide/core/project-rules.md %})
-- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
+- [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Project Rules]({{ site.baseurl }}{% link guide/core/project-rules.md %})
+- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
 
 What’s next
-- [Proceed to Data Governance and Privacy →]({{ site.baseurl }}{% link resources/data-governance.md %})
+- Proceed to [Data Governance and Privacy]({{ site.baseurl }}{% link policies/data-governance.md %})
+
+Change log
+- 2025-11-03: Added audience one‑liner.
+- 2025-11-03: Marked complete; added an optional approval-gated prompt to build a notes index; kept file-scoped constraints and cross-links.
+- 2025-11-03: Reworded to avoid jargon (YAML/diffs/patch/manifest) in Core; advanced option now describes a plain‑language structured review.
+- 2025-11-03: Added agent automation (dry‑run manifest + patch) for slug normalization and dedup; clarified approval flow.
+- 2025-11-03: First draft with folder recommendations, synthesis notes, precise `@file` usage, de‑dup hygiene, prompt patterns, and cross‑links.
 
 [^cursor-forum-prompts]: Cursor Community Forum, “Cursor prompt engineering best practices,” https://forum.cursor.com/t/cursor-prompt-engineering-best-practices/1592 (accessed 2025-11-03).

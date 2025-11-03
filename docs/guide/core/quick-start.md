@@ -60,8 +60,7 @@ Glossary: zero‑jargon essentials (1 minute)
 - Clear preview of changes: a readable summary of what will change before it’s applied (you approve before writing).
 - Claims log: a short list (`claims.md`) of non‑obvious statements with their sources, so you can verify later.
 
-Minimal workspace (example). Download the ready‑to‑use starter project:  
-[Download starter project (zip)]({{ site.baseurl }}/assets/downloads/minimal-project.zip)
+Minimal workspace (example). You can copy the ready‑to‑use template from the starter linked in [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %}).
 ```
 paper-project/
   AGENTS.md
@@ -83,7 +82,7 @@ paper-project/
 
 First-hour exercise (copy/paste into Cursor as file-scoped prompts)
 1) Set project rules
-   - Create `AGENTS.md` in your project root (the starter project includes a minimal example). Keep it short.
+   - Create `AGENTS.md` in your project root (or copy the minimal example from [Project Rules]({{ site.baseurl }}{% link guide/core/project-rules.md %})). Keep it short.
 
 2) IMRaD outline from 3 PDFs
    - Put three relevant PDFs into `data/raw/`.
@@ -119,7 +118,7 @@ First-hour exercise (copy/paste into Cursor as file-scoped prompts)
        code and outputs. Save code under analysis/scripts/01-table.py
        (or .R).
        ```
-       See the [Analysis guide]({{ site.baseurl }}{% link guide/core/analysis.md %}).
+       See [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %}).
 
 4) Optional figure — choose your path
    - No‑code path (default):
@@ -164,16 +163,21 @@ Safety and accuracy guardrails
 - No‑code path: limit to transcription (no derived stats). Mark any needed calculations as TODOs for Analysis.
 - Low‑code path: for any derived numeric result, require “use code to calculate”, show code and outputs, and explain in plain language.
 - Keep a simple claims log in `claims.md`; cite non‑obvious claims.
-- Prefer local processing for sensitive data; review [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %}).
+- Prefer local processing for sensitive data; review provider settings ([Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})).
 
 Cross‑links
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
-- [Accuracy and claims]({{ site.baseurl }}{% link guide/core/accuracy.md %})
-- [Managing sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
-- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
+- [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
+- [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
 
 What’s next
-- [Do the guided exercise →]({{ site.baseurl }}{% link getting-started/first-hour.md %})
+- Do the [First‑Hour exercise]({{ site.baseurl }}{% link getting-started/first-hour.md %})
 
- 
+Change log
+- 2025-11-03: Standardized all long prompts to fenced code blocks for easy copy/paste.
+- 2025-11-03: Minor editorial polish and clarified change‑preview expectation.
+- 2025-11-03: First full draft; added front matter, first-hour exercise, cross-links, and safety guardrails.
+- 2025-11-03: Removed early provider/API-key details; added AGENTS.md explanation and minimal template; linked sample project folder.
+- 2025-11-03: Added no‑code and low‑code tracks; made figure optional for no‑code users.

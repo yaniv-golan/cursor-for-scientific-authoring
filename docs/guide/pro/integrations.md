@@ -1,7 +1,10 @@
 ---
 title: Integrations: Claude Code And OpenAI Codex
-status: complete
+layout: default
+grand_parent: Guide
+parent: Pro
 ---
+
 
 # Integrations: Claude Code And OpenAI Codex
 

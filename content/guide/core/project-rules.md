@@ -43,5 +43,15 @@ Reuse across tools
 - Keep the same rules if you use other IDE assistants; include `@AGENTS.md` and, when relevant, `@content/reference-toc.md` in prompts so tools load the site structure.
 
 Where to start
-- A sample `AGENTS.md` also appears in Quick Start: content/guide/core/quick-start.md:31
+- A sample `AGENTS.md` also appears in [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %}).
 - Keep `AGENTS.md` minimal; evolve it as your team converges on conventions.
+
+See also
+- [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %}) for claims logging, citations, and numeric guardrails.
+- [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %}) for the “use code to calculate” pattern, seeds, and saved outputs.
+
+What’s next
+- Continue to [Endgame]({{ site.baseurl }}{% link guide/core/endgame.md %}) to finalize outputs and prepare for publishing.
+
+Change log (drafting)
+- 2025-11-03: Added internal cross-links and a What’s next section; aligned with link tag format.

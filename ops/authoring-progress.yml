@@ -36,46 +36,46 @@ entries:
     notes: Added audience one-liner and beginner notes; maintained prompts and examples.
   - id: core/project-rules
     path: content/guide/core/project-rules.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; AGENTS.md guidance.
+    status: complete
+    updated: 2025-11-03T21:27:00Z
+    notes: Added cross-links, What's next, and aligned link tags; marked complete.
   - id: core/endgame
     path: content/guide/core/endgame.md
-    status: draft
-    updated: 2025-11-03T20:08:00Z
-    notes: Rephrased to avoid "diffs"; use "clear preview of changes".
+    status: complete
+    updated: 2025-11-03T21:45:00Z
+    notes: Marked complete; added exports, reproducibility bundle, packaging prompt, cross-links, and What's next.
   - id: core/checklists
     path: content/guide/core/checklists.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; verification and drafting.
+    status: complete
+    updated: 2025-11-03T21:53:00Z
+    notes: Fixed internal links to site link-tag format; marked complete.
   - id: plus/git
     path: content/guide/plus/git.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; versioning in Cursor.
+    status: complete
+    updated: 2025-11-03T22:57:00Z
+    notes: Marked complete; minor polish and confirmed cross-links and approval-gated prompt.
   - id: plus/branching
     path: content/guide/plus/branching.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; exploratory alternates.
+    status: complete
+    updated: 2025-11-04T01:13:00Z
+    notes: Marked complete; prefer ff-only merges, rebase optional; links verified.
   - id: pro/mcp
     path: content/guide/pro/mcp.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; MCP skills.
+    status: complete
+    updated: 2025-11-03T23:06:00Z
+    notes: Marked complete; added citations and finalized structure and links.
   - id: pro/integrations
     path: content/guide/pro/integrations.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; Claude Code and Codex.
+    status: complete
+    updated: 2025-11-04T01:13:00Z
+    notes: Marked complete; added citations and finalized prompt and links.
   - id: pro/multi-agent
     path: content/guide/pro/multi-agent.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; multi-agent workflows.
+    status: complete
+    updated: 2025-11-04T01:13:00Z
+    notes: Marked complete; patterns and safety gates finalized.
   - id: guide/index
     path: content/guide/index.md
     status: complete
-    updated: 2025-11-03T16:48:00Z
-    notes: Overview drafted and aligned with TOC; ready for publish pass.
+    updated: 2025-11-04T01:13:00Z
+    notes: Marked complete; converted cross-links to site link tags and finalized copy.

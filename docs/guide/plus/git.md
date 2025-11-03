@@ -1,7 +1,10 @@
 ---
 title: Versioning With Git (Inside Cursor)
-status: complete
+layout: default
+grand_parent: Guide
+parent: Plus
 ---
+
 
 # Versioning With Git (Inside Cursor)
 

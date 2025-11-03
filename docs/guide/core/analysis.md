@@ -126,11 +126,15 @@ Steps:
 ```
 
 Cross‑links
-- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
+- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 - [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
-- [Project rules (AGENTS.md)]({{ site.baseurl }}{% link guide/core/project-rules.md %})
+- [Project Rules]({{ site.baseurl }}{% link guide/core/project-rules.md %})
 
 What’s next
-- [Proceed to Project Rules with AGENTS.md →]({{ site.baseurl }}{% link guide/core/project-rules.md %})
+- Proceed to [Project Rules]({{ site.baseurl }}{% link guide/core/project-rules.md %})
+
+Change log
+- 2025-11-03: Added audience one‑liner and beginner guidance.
+- 2025-11-03: First complete draft with prompts, Python/R examples, lockfile guidance, seeds, and save locations; added cross‑links and next step.

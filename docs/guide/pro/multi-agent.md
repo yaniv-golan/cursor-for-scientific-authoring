@@ -1,7 +1,10 @@
 ---
 title: Multi‑agent Workflows (Optional)
-status: complete
+layout: default
+grand_parent: Guide
+parent: Pro
 ---
+
 
 # Multi‑agent Workflows (Optional)
 

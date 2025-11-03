@@ -22,7 +22,7 @@ What this covers
 Before you start
 - In your project, add a simple `claims.md` at the root to track non‑obvious assertions and their sources.
 - Use file‑scoped prompts so edits remain auditable (with a clear preview of changes in one file) and avoid stale chat memory.
-- Prefer local processing for sensitive data; see [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %}).
+- Prefer local processing for sensitive data; see [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %}).
 
 Read–extract–cite workflow
 1) Identify the target passage(s) in your sources (PDFs, datasets, protocols).
@@ -156,10 +156,21 @@ Cross‑links
 - [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
 - [First‑Hour exercise]({{ site.baseurl }}{% link getting-started/first-hour.md %})
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
-- [Analysis patterns]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Managing sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
-- [Project rules (AGENTS.md)]({{ site.baseurl }}{% link guide/core/project-rules.md %})
-- [Data governance]({{ site.baseurl }}{% link resources/data-governance.md %})
+- [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
+- [Project Rules]({{ site.baseurl }}{% link guide/core/project-rules.md %})
+- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
 
 What’s next
-- [Proceed to Managing Sources →]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
+- Proceed to [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
+
+Change log
+- 2025-11-03: Added audience one‑liner.
+- 2025-11-03: Marked complete; added an optional advanced audit prompt with approval gating and file-scoped constraints.
+- 2025-11-03: Standardized prompt patterns to fenced code blocks for easy copy/paste.
+- 2025-11-03: Emphasized “show code and outputs” and added cross-links to Quick Start and First‑Hour.
+- 2025-11-03: Switched default claims.md template to a simple bullet list; kept table as optional.
+- 2025-11-03: Clarified example; moved explanation outside code block and added a concrete example sentence.
+- 2025-11-03: Added page‑number requirement, no‑code numeric note, claims.md template, and privacy pointer.
+- 2025-11-03: Removed internal repo reference; clarified reader-facing guidance for `claims.md` in user projects.
+- 2025-11-03: First full draft with claims log, read–extract–cite, numeric rubric, and verification checklist.

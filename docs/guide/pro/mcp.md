@@ -1,7 +1,10 @@
 ---
 title: MCP And Scientific Skills (Advanced)
-status: complete
+layout: default
+grand_parent: Guide
+parent: Pro
 ---
+
 
 # MCP And Scientific Skills (Advanced)
 

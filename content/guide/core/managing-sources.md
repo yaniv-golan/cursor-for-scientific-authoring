@@ -89,15 +89,15 @@ Steps:
 ```
 
 Cross‑links
-- Quick Start: `content/guide/core/quick-start.md`
-- Accuracy: `content/guide/core/accuracy.md`
-- Writing in Markdown: `content/guide/core/writing-markdown.md`
-- Analysis patterns: `content/guide/core/analysis.md`
-- Project rules (AGENTS.md): `content/guide/core/project-rules.md`
-- Data governance: `content/policies/data-governance.md`
+- [Quick Start]({{ site.baseurl }}{% link guide/core/quick-start.md %})
+- [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
+- [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
+- [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
+- [Project Rules]({{ site.baseurl }}{% link guide/core/project-rules.md %})
+- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
 
 What’s next
-- Proceed to Data Governance and Privacy: `content/policies/data-governance.md`
+- Proceed to [Data Governance and Privacy]({{ site.baseurl }}{% link policies/data-governance.md %})
 
 Change log
 - 2025-11-03: Added audience one‑liner.
