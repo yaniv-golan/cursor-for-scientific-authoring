@@ -126,7 +126,7 @@ Steps:
 ```
 
 Cross‑links
-- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 - [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})

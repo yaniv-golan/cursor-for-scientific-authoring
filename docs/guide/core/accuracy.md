@@ -22,7 +22,7 @@ What this covers
 Before you start
 - In your project, add a simple `claims.md` at the root to track non‑obvious assertions and their sources.
 - Use file‑scoped prompts so edits remain auditable (with a clear preview of changes in one file) and avoid stale chat memory.
-- Prefer local processing for sensitive data; see [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %}).
+- Prefer local processing for sensitive data; see [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %}).
 
 Read–extract–cite workflow
 1) Identify the target passage(s) in your sources (PDFs, datasets, protocols).
@@ -159,7 +159,7 @@ Cross‑links
 - [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
 - [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
 - [Project Rules]({{ site.baseurl }}{% link guide/core/project-rules.md %})
-- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})
 
 What’s next
 - Proceed to [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})

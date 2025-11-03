@@ -45,7 +45,7 @@ Cross‑links
 - [First‑Hour Exercise]({{ site.baseurl }}{% link exercises/first-hour.md %})
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
-- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})
 - [Analysis (optional, low‑code)]({{ site.baseurl }}{% link guide/core/analysis.md %})
 
 What’s next

@@ -193,7 +193,7 @@ Cross‑links
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 - [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
 - [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})
 - [First‑Hour exercise]({{ site.baseurl }}{% link getting-started/first-hour.md %})
 
 What’s next

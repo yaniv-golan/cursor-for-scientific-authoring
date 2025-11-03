@@ -98,10 +98,10 @@ Cross‑links
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
 - [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
 - [Project Rules]({{ site.baseurl }}{% link guide/core/project-rules.md %})
-- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})
 
 What’s next
-- Proceed to [Data Governance and Privacy]({{ site.baseurl }}{% link policies/data-governance.md %})
+- Proceed to [Data Governance and Privacy]({{ site.baseurl }}{% link resources/data-governance.md %})
 
 Change log
 - 2025-11-03: Added audience one‑liner.

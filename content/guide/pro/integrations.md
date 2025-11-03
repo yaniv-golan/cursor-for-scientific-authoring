@@ -1,5 +1,5 @@
 ---
-title: Integrations: Claude Code And OpenAI Codex
+title: "Integrations: Claude Code And OpenAI Codex"
 status: complete
 ---
 

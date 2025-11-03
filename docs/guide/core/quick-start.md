@@ -163,14 +163,14 @@ Safety and accuracy guardrails
 - No‑code path: limit to transcription (no derived stats). Mark any needed calculations as TODOs for Analysis.
 - Low‑code path: for any derived numeric result, require “use code to calculate”, show code and outputs, and explain in plain language.
 - Keep a simple claims log in `claims.md`; cite non‑obvious claims.
-- Prefer local processing for sensitive data; review provider settings ([Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})).
+- Prefer local processing for sensitive data; review provider settings ([Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})).
 
 Cross‑links
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 - [Managing Sources]({{ site.baseurl }}{% link guide/core/managing-sources.md %})
 - [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})
 
 What’s next
 - Do the [First‑Hour exercise]({{ site.baseurl }}{% link getting-started/first-hour.md %})

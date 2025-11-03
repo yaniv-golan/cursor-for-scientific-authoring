@@ -110,7 +110,7 @@ Reproducibility and safety guardrails
 - Low‑code path: “use code to calculate”; show code and outputs; explain in plain language ([Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})).
 - Set seeds for stochastic steps; save exact scripts under `analysis/scripts/`.
 - Capture environments as lockfiles where applicable (e.g., `environment.yml`, `renv.lock`).
-- Prefer local processing for sensitive data; see [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %}).
+- Prefer local processing for sensitive data; see [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %}).
 - Track non‑obvious assertions in `claims.md` and cite accordingly.
 
 Validation checklist
@@ -125,7 +125,7 @@ Cross-links
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 - [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})
 
 What’s next
 - Proceed to [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})

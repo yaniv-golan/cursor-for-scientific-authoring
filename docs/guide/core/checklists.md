@@ -72,4 +72,4 @@ Cross‑links
 - [Accuracy]({{ site.baseurl }}{% link guide/core/accuracy.md %})
 - [Writing in Markdown]({{ site.baseurl }}{% link guide/core/writing-markdown.md %})
 - [Analysis]({{ site.baseurl }}{% link guide/core/analysis.md %})
-- [Data Governance]({{ site.baseurl }}{% link policies/data-governance.md %})
+- [Data Governance]({{ site.baseurl }}{% link resources/data-governance.md %})

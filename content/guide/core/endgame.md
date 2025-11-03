@@ -1,5 +1,5 @@
 ---
-title: Endgame: Journal‑Ready Output
+title: "Endgame: Journal‑Ready Output"
 status: complete
 ---
 
