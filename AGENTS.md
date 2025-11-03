@@ -22,6 +22,14 @@
 - Keep this repository’s layout (docs/content/raw) as production for the guide only; do not present it as a template for research projects.
 - Prefer file-scoped prompts and grounded edits over free-form chat. Show diffs for substantial changes.
 
+### Prompt formatting for docs (copy/paste friendly)
+- Present any long prompt examples inside fenced code blocks using triple backticks and a neutral language tag like `text` for clean copy/paste.
+- Avoid triple quotes ("""). They are not a Markdown standard and are easier to miscopy. Prefer fenced blocks instead.
+- Keep prompts plain and self-contained: start with a single-line Task, then Safety rules, then Steps. Avoid internal Markdown formatting inside the prompt text.
+- Include explicit approval gating for any changes (e.g., require the user to reply exactly `CONFIRM APPLY` before renames/moves/installs).
+- Use a simple-first prompt by default; list any structured/advanced workflow (e.g., review checklist, proposed change list) as optional.
+- Prefer file-scoped constraints in prompts (what files/paths may be changed). Ask clarifying questions before proceeding if anything is ambiguous.
+
 ## Tool-specific ingestion notes
 - Cursor: reference `@AGENTS.md` and `@content/reference-toc.md` in prompts so the agent loads rules and structure.
 - Claude Code: create and maintain `CLAUDE.md` that includes `@AGENTS.md`; Claude Code does not auto-read `AGENTS.md`.
@@ -31,6 +39,7 @@
 - Cite sources for non-obvious claims using Markdown footnotes or reference lists. Capture bibliographic details in `references/` when possible.
 - Flag any uncertainty or missing evidence rather than speculating.
 - Keep tone instructional, concise, and appropriate for researchers who may not be software engineers.
+- Prefer plain language over developer jargon in reader-facing content. If a technical term is necessary, define it briefly or use a clearer substitute (e.g., say “preview of changes” instead of “diff,” “checklist” instead of “manifest”). Default to a simple-first prompt, with any advanced or team workflows marked as optional.
 - Avoid modifying files under `raw/`; add new work in `content/` or `docs/` as appropriate.
 - Treat `raw/claims.md` as the fact-checked source of truth—align new guidance with the claims it records or update the catalogue first if new evidence emerges.
 - Do not present this repository’s layout as a template for research projects; it is a production layout for the guide only.

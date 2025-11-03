@@ -22,7 +22,7 @@ We are building this playbook collaboratively. Contributions are welcome—see t
 
 - Drafts live in `content/` and are iterated until stable.
 - Published pages live in `docs/` (this site), built by GitHub Pages.
-- Non‑obvious claims are tracked in `raw/claims.md` with sources or clearly labeled empirical notes.
+- The team maintains an internal claims catalog while authoring this guide. For your own projects, keep a simple `claims.md` at the project root to track non‑obvious assertions and their sources.
 - Agents and contributors should follow the reference TOC at `content/reference-toc.md` and the rules in `AGENTS.md`.
 
 Note: this repository’s layout (docs/content/raw) is for producing the guide, not a template for research projects.

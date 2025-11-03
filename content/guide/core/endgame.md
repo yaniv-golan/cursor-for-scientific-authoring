@@ -9,12 +9,12 @@ Draft. Assemble, audit, package.
 
 - Match author guidelines and templates
 - Final citation audit; figure/table checks
-- Reproducibility bundle (data/code/prompts/diffs)
+- Reproducibility bundle (data/code/prompts/change previews)
 - Preprint vs submission packaging
 
 Google Docs collaboration (optional)
 - If collaborators prefer Google Docs, you can paste your Markdown into Docs and enable Tools → Preferences → “Automatically detect Markdown” so headings, lists, emphasis, and links auto‑convert to formatted text.[^google-docs-markdown]
-- Use this as a review copy; keep Markdown in your repo as the source of truth. When edits land in Docs, ask the agent to reconcile back into your Markdown files as diffs.
+- Use this as a review copy; keep Markdown in your repo as the source of truth. When edits land in Docs, ask the agent to reconcile back into your Markdown files with a clear preview of changes.
 - Limits: code blocks and math may not convert; for equations, prefer the PDF/LaTeX export path or keep math in Markdown and summarize in Docs.
 
 Equation numbering (optional)

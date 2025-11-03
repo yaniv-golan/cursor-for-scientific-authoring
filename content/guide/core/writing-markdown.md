@@ -1,8 +1,11 @@
+---
 title: Writing In Markdown For Science
 status: complete
 ---
 
 # Writing In Markdown For Science
+
+Who this is for: researchers who want clean, citable Markdown manuscripts without wrestling tools.
 
 Goal: make Markdown your single source of truth for the manuscript, with clear structure (IMRaD), managed citations, and predictable exports—without surprising installs.
 
@@ -51,10 +54,22 @@ Figures and tables
 - For numeric results that require computing, follow the pattern in `content/guide/core/analysis.md`: use code to calculate; show code and outputs; explain in plain language.
 
 Agent help with figures and tables (friendly shortcuts)
-- Tables (no‑code): “Read `data/processed/example.csv` and generate a clean Markdown table with columns [A, C, E]. Save to `manuscript/tables/example.md` and add a specific caption. Do not compute derived statistics.”
-- Tables (low‑code): “Create `analysis/notebooks/01-table.md` to load `data/processed/example.csv`, compute summary stats, and write a paper‑ready table to `manuscript/tables/example.md`. Use code to calculate; show code and outputs. Save code in `analysis/scripts/01-table.py` (or `.R`).”
-- Figures (no‑code): “Write step‑by‑step instructions for making a [scatter/bar/line] chart from `data/processed/example.csv` in Numbers/Excel/Sheets, including which columns, labels, units, and a caption. I’ll save the output to `manuscript/figures/example.png`.”
-- Figures (low‑code): “Create `analysis/notebooks/02-figure.md` that loads `data/processed/example.csv` and saves a figure to `analysis/figures/example.png`. Explain what the figure shows in plain language. Save code under `analysis/scripts/02-figure.py` (or `.R`). Set a random seed if randomness is used.”
+- Tables (no‑code):
+  ```text
+  Read data/processed/example.csv and generate a clean Markdown table with columns [A, C, E]. Save to manuscript/tables/example.md and add a specific caption. Do not compute derived statistics.
+  ```
+- Tables (low‑code):
+  ```text
+  Create analysis/notebooks/01-table.md to load data/processed/example.csv, compute summary stats, and write a paper-ready table to manuscript/tables/example.md. Use code to calculate; show code and outputs. Save code in analysis/scripts/01-table.py (or .R).
+  ```
+- Figures (no‑code):
+  ```text
+  Write step-by-step instructions for making a [scatter/bar/line] chart from data/processed/example.csv in Numbers/Excel/Sheets, including which columns, labels, units, and a caption. I will save the output to manuscript/figures/example.png.
+  ```
+- Figures (low‑code):
+  ```text
+  Create analysis/notebooks/02-figure.md that loads data/processed/example.csv and saves a figure to analysis/figures/example.png. Explain what the figure shows in plain language. Save code under analysis/scripts/02-figure.py (or .R). Set a random seed if randomness is used.
+  ```
 
 Equations and callouts
 - Inline math with `$...$` and display math with `$$...$$` (if your export route supports LaTeX math).
@@ -79,16 +94,22 @@ Tips
 Agent help with math (friendly shortcuts)
 - You don’t need to memorize LaTeX. Ask the agent to draft or fix math for you.
 - Try one of these file‑scoped prompts:
-  - “From this English description, write both inline and display math and explain symbols briefly: beta hat equals (X transpose X) inverse, times X transpose y.”
-  - “Convert this equation into LaTeX, then check syntax and suggest a clearer layout: y = m x + b.”
-  - “Review this LaTeX for mistakes and consistency. If anything is ambiguous, ask me questions: $$ y = mx + b $$.”
+  ```text
+  From this English description, write both inline and display math and explain symbols briefly: beta hat equals (X transpose X) inverse, times X transpose y.
+  ```
+  ```text
+  Convert this equation into LaTeX, then check syntax and suggest a clearer layout: y = m x + b.
+  ```
+  ```text
+  Review this LaTeX for mistakes and consistency. If anything is ambiguous, ask me questions: $$ y = mx + b $$.
+  ```
 - If your environment supports images (some models or extensions do), you can attach a screenshot of an equation and ask: “Transcribe this into Markdown/LaTeX. If any symbols are unclear, list assumptions and alternatives.” Verify image support in your setup first.
 
 Citations and references
 - Store bibliographic data in `references/` as either BibTeX (`library.bib`) or CSL JSON (`library.json`). Keep `references/` as the bibliographic source of truth.
 - Cite with Pandoc syntax: `[@key]` for parenthetical, `@key` for narrative, and `[-@key]` to suppress author.
 - Add page numbers with `[@key, p. 12]`.
-- Maintain a simple `raw/claims.md`‑style claims log inside your project (e.g., `claims.md`) for non‑obvious assertions and verify them; see `content/guide/core/accuracy.md`.
+- Maintain a simple `claims.md` log at your project root for non‑obvious assertions and verify them; see `content/guide/core/accuracy.md`.
 
 Export (review‑first, optional)
 - Share Markdown during early drafting (recommended). When you need DOCX/PDF:
@@ -104,13 +125,15 @@ What is Pandoc? (for non‑programmers)
 Google Docs bridge (Markdown support)
 - If you collaborate in Google Docs, you can enable “Automatically detect Markdown” in Tools → Preferences. Pasting or typing common Markdown (headings, lists, emphasis, links) will auto‑convert to formatted text. Not all elements convert (e.g., code blocks or math), so review the result.[^google-docs-markdown]
 - Some Docs builds also add Edit → “Paste from Markdown” and “Copy as Markdown.” If available, these commands make round‑tripping between Docs and your Markdown files easier. Availability can vary by account/rollout.
-- Workflow: draft in Markdown → paste into Docs for comments (auto‑convert or Paste from Markdown) → when ready, use “Copy as Markdown” in Docs and ask the agent to reconcile the patch back into your Markdown files with a clear diff.
+- Workflow: draft in Markdown → paste into Docs for comments (auto‑convert or Paste from Markdown) → when ready, use “Copy as Markdown” in Docs and ask the agent to reconcile the changes back into your Markdown files with a clear preview of changes.
 
 Agent‑assisted export (review first)
-- Agents generally propose safe commands, but treating command execution like approving a pull request is a good habit—especially on machines with important data.
+- Agents generally propose safe commands, but review proposed actions like you would review suggested edits before running them—especially on machines with important data.
 - If anything is unclear, ask the agent to explain each step in plain language before you approve.
 - Suggested file‑scoped prompt:
-  > “Check whether `pandoc` is available. If not, propose OS‑specific install steps without executing. Draft a command to export `manuscript/sections/*.md` to DOCX (and optionally PDF) with `--citeproc`, using `references/library.bib` (or `library.json`) and `references/style.csl`. Show the exact command, explain each flag, and wait for my approval before running.”
+  ```text
+  Check whether pandoc is available. If not, propose OS-specific install steps without executing. Draft a command to export manuscript/sections/*.md to DOCX (and optionally PDF) with --citeproc, using references/library.bib (or library.json) and references/style.csl. Show the exact command, explain each flag, and wait for my approval before running.
+  ```
 
 Example commands (for review and manual execution)
 - DOCX (adjust paths/styles):
@@ -136,7 +159,7 @@ pandoc manuscript/sections/*.md \
 Reproducibility guardrails
 - Keep analysis code separate (under `analysis/`) and save generated figures/tables deterministically.
 - Record seeds for any stochastic steps; save exact scripts under `analysis/scripts/`.
-- Capture environments with lockfiles where applicable (`environment.yml`, `renv.lock`).
+- Capture environments with lockfiles (small files that record exact package versions) where applicable (`environment.yml`, `renv.lock`).
 
 Cross‑links
 - Quick Start: `content/guide/core/quick-start.md`
@@ -150,6 +173,8 @@ What’s next
 - Proceed to Accuracy: `content/guide/core/accuracy.md`
 
 Change log
+- 2025-11-03: Added audience one‑liner; fixed front matter formatting.
+- 2025-11-03: Standardized long prompt examples to fenced code blocks for easy copy/paste.
 - 2025-11-03: Marked complete; added in-file footnote for Google Docs Markdown support and tightened export/math notes.
 - 2025-11-03: Expanded Google Docs bridge with “Paste from Markdown” / “Copy as Markdown” and a round‑trip workflow.
 - 2025-11-03: Added Google Docs bridge note with Markdown support and source citation.

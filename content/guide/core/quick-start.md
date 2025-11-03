@@ -5,7 +5,9 @@ status: complete
 
 # Quick Start (Vanilla Cursor)
 
-Goal: produce an IMRaD outline and one table in 30–60 minutes using file-scoped prompts and safe, auditable edits (with diffs). An optional figure and export are available if you already have the tools.
+Who this is for: researchers (including non‑coders) starting from zero; low‑code is optional.
+
+Goal: produce an IMRaD outline and one table in 30–60 minutes using file-scoped prompts and safe, auditable edits with a clear preview of changes. An optional figure and export are available if you already have the tools.
 
 What you’ll accomplish
 - Create a minimal paper workspace (your own local folder).
@@ -22,6 +24,7 @@ Prerequisites (Day‑0)
 - Cursor installed and signed in; model selected in Composer.
 - Local folder chosen for your paper project.
 - Optional for later analysis: Python or R; Pandoc; LaTeX (for journal‑style PDFs).
+ - Model access: for your first session, use Cursor’s built‑in provider. Custom API keys can disable some Agent features; you can switch later if needed.
 
 What is AGENTS.md (1 minute)
 - A short, human-readable rules file at the project root that tells coding agents how to work safely on your paper (file‑first edits, citation rules, and acceptance criteria).
@@ -33,7 +36,7 @@ Copy‑paste minimal AGENTS.md
 Scope: All files in this project.
 
 How we work
-- File‑first edits only. Make the smallest safe change and show diffs.
+- File‑first edits only. Make the smallest safe change and show a clear preview of changes.
 - Keep edits in the target file(s) unless asked otherwise.
 
 Accuracy & citations
@@ -46,8 +49,13 @@ Privacy & safety
 - Ask before executing commands or installing packages.
 
 Acceptance checklist (before finishing)
-- Edits are file‑scoped with diffs; citations present; numbers reproducible; paths consistent; next steps listed.
+- Edits are file‑scoped with a clear preview of changes; citations present; numbers reproducible; paths consistent; next steps listed.
 ```
+
+Glossary: zero‑jargon essentials (1 minute)
+- File‑scoped prompt: a request that names the exact file(s) to read or edit so changes are constrained and reviewable.
+- Clear preview of changes: a readable summary of what will change before it’s applied (you approve before writing).
+- Claims log: a short list (`claims.md`) of non‑obvious statements with their sources, so you can verify later.
 
 Minimal workspace (example). You can copy the ready‑to‑use template at `content/templates/minimal-project/`.
 ```
@@ -76,23 +84,45 @@ First-hour exercise (copy/paste into Cursor as file-scoped prompts)
 2) IMRaD outline from 3 PDFs
    - Put three relevant PDFs into `data/raw/`.
    - Prompt (file-scoped):
-     - “Read the three PDFs in `data/raw/`. Extract: key research question(s), datasets, methods, and main findings. Draft an IMRaD outline in `manuscript/sections/00-outline.md`. Use footnotes for non‑obvious claims and point footnotes to `references/` or `claims.md`. Keep all edits file‑scoped and show diffs.”
+     ```text
+     Read the three PDFs in data/raw/. Extract: key research question(s), datasets, methods, and main findings. Draft an IMRaD outline in manuscript/sections/00-outline.md. Use footnotes for non-obvious claims and point footnotes to references/ or claims.md. For any direct quote include page or section numbers. Keep all edits file-scoped and show a clear preview of changes.
+     ```
 
 3) One table from a CSV — choose your path
    - No‑code path (default):
-     - Prompt (file‑scoped): “Read `data/processed/example.csv` and convert the first N rows and relevant columns into a clean Markdown table saved at `manuscript/tables/example.md`. Do not compute derived statistics yet. Add a short plain‑language caption.”
+     - Prompt (file‑scoped):
+       ```text
+       Read data/processed/example.csv and convert the first N rows and relevant columns into a clean Markdown table saved at manuscript/tables/example.md. Do not compute derived statistics yet. Add a short plain-language caption.
+       ```
    - Low‑code path (optional):
-     - Prompt (file‑scoped): “Create `analysis/notebooks/01-table.md` that loads `data/processed/example.csv`, computes summary statistics with code, and writes a paper‑ready Markdown table to `manuscript/tables/example.md`. Use code to calculate and show code and outputs. Save code under `analysis/scripts/01-table.py` (or `.R`).” See `content/guide/core/analysis.md`.
+     - Prompt (file‑scoped):
+       ```text
+       Propose changes first. Do not write files until I reply exactly: CONFIRM APPLY.
+
+       Create analysis/notebooks/01-table.md that loads data/processed/example.csv, computes summary statistics with code, and writes a paper-ready Markdown table to manuscript/tables/example.md. Use code to calculate and show code and outputs. Save code under analysis/scripts/01-table.py (or .R).
+       ```
+       See content/guide/core/analysis.md.
 
 4) Optional figure — choose your path
    - No‑code path (default):
-     - Prompt (file‑scoped): “Write step‑by‑step instructions for making a [scatter/bar/line] chart from `data/processed/example.csv` in Numbers/Excel/Sheets (which columns, chart type, labels, units). Provide the figure caption text. I’ll create the chart manually and save as `manuscript/figures/example.png`.”
+     - Prompt (file‑scoped):
+       ```text
+       Write step-by-step instructions for making a [scatter/bar/line] chart from data/processed/example.csv in Numbers/Excel/Sheets (which columns, chart type, labels, units). Provide the figure caption text. I will create the chart manually and save as manuscript/figures/example.png.
+       ```
    - Low‑code path (optional):
-     - Prompt (file‑scoped): “Create `analysis/notebooks/02-figure.md` that loads `data/processed/example.csv` and saves a figure to `analysis/figures/example.png`. Include code and the resulting plot preview; describe what it shows in plain language. Save code under `analysis/scripts/02-figure.py` (or `.R`). Set a random seed if randomness is used.”
+     - Prompt (file‑scoped):
+       ```text
+       Propose changes first. Do not write files until I reply exactly: CONFIRM APPLY.
+
+       Create analysis/notebooks/02-figure.md that loads data/processed/example.csv and saves a figure to analysis/figures/example.png. Include code and the resulting plot preview; describe what it shows in plain language. Save code under analysis/scripts/02-figure.py (or .R). Set a random seed if randomness is used.
+       ```
 
 5) Citation audit
    - Prompt (file-scoped):
-     - “Scan `manuscript/sections/` for quotations/paraphrases. For each, add a citation and a footnote pointing to `references/` or `claims.md`. Flag any statement that lacks a source. Do not invent citations. Summarize gaps in `claims.md`.” See Accuracy for details (`content/guide/core/accuracy.md`).
+     ```text
+     Scan manuscript/sections/ for quotations/paraphrases. For each, add a citation and a footnote pointing to references/ or claims.md. Flag any statement that lacks a source. Do not invent citations. Summarize gaps in claims.md.
+     ```
+     See Accuracy for details (content/guide/core/accuracy.md).
 
 6) Export a shareable draft
    - If you have Pandoc: convert a merged Markdown draft to DOCX/PDF using your target journal’s CSL style. See Writing in Markdown for options (`content/guide/core/writing-markdown.md`).
@@ -116,7 +146,8 @@ What’s next
 - Do the guided exercise: `content/exercises/first-hour.md`
 
 Change log
-- 2025-11-03: Marked complete; minor editorial polish and clarified diff expectation.
+- 2025-11-03: Standardized all long prompts to fenced code blocks for easy copy/paste.
+- 2025-11-03: Minor editorial polish and clarified change‑preview expectation.
 - 2025-11-03: First full draft; added front matter, first-hour exercise, cross-links, and safety guardrails.
 - 2025-11-03: Removed early provider/API-key details; added AGENTS.md explanation and minimal template; linked sample project folder.
 - 2025-11-03: Added no‑code and low‑code tracks; made figure optional for no‑code users.

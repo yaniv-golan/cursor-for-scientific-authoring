@@ -21,5 +21,5 @@ Release notes and notable changes are tracked in the Changelog.
 Notes for contributors:
 
 - Follow the rules in `AGENTS.md` and the structure in `content/reference-toc.md`.
-- Treat `raw/claims.md` as the fact-checked source of truth; update it before introducing new claims.
+- Record non‑obvious claims with sources in the internal claims catalog for this guide. In reader projects, use a project‑level `claims.md`.
 ---

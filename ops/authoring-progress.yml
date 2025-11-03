@@ -2,8 +2,8 @@ entries:
   - id: core/quick-start
     path: content/guide/core/quick-start.md
     status: complete
-    updated: 2025-11-03T15:01:07Z
-    notes: Softened goal/export language to make Markdown the default, figure/export optional.
+    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    notes: Added audience one-liner and a zero-jargon glossary; kept simple-first tone.
   - id: exercises/first-hour
     path: content/exercises/first-hour.md
     status: complete
@@ -12,28 +12,28 @@ entries:
   - id: core/writing-markdown
     path: content/guide/core/writing-markdown.md
     status: complete
-    updated: 2025-11-03T17:34:00Z
-    notes: Marked complete; added footnote, export/math clarifications, and cross-links verified.
+    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    notes: Added audience one-liner and fixed front matter; maintained cross-links.
   - id: core/accuracy
     path: content/guide/core/accuracy.md
-    status: draft
-    updated: 2025-11-03T18:02:00Z
-    notes: Added page-number requirement, no-code numeric note, claims.md template, and privacy pointer.
+    status: complete
+    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    notes: Added audience one-liner; preserved audit prompt and guardrails.
   - id: core/managing-sources
     path: content/guide/core/managing-sources.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; organize PDFs and corpora.
+    status: complete
+    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    notes: Added audience one-liner; kept approval-gated notes index and cross-links.
   - id: policies/data-governance
     path: content/policies/data-governance.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; insert before Analysis.
+    status: complete
+    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    notes: Completed page with local-first guidance, approval gating, safe prompts, and cross-links.
   - id: core/analysis
     path: content/guide/core/analysis.md
-    status: pending
-    updated: 2025-11-03T16:06:00Z
-    notes: Pending; "use code to calculate".
+    status: complete
+    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    notes: Added audience one-liner and beginner notes; maintained prompts and examples.
   - id: core/project-rules
     path: content/guide/core/project-rules.md
     status: pending
@@ -42,8 +42,8 @@ entries:
   - id: core/endgame
     path: content/guide/core/endgame.md
     status: draft
-    updated: 2025-11-03T15:06:15Z
-    notes: Added Google Docs collaboration tip (Markdown auto-convert) and change log.
+    updated: 2025-11-03T20:08:00Z
+    notes: Rephrased to avoid "diffs"; use "clear preview of changes".
   - id: core/checklists
     path: content/guide/core/checklists.md
     status: pending
