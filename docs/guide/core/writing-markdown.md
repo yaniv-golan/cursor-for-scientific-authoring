@@ -21,7 +21,7 @@ What this covers
 
 Before you start
 - Use the minimal project layout from Quick Start: {{ site.baseurl }}{% link guide/core/quick-start.md %}.  
-  Download the starter project: {{ site.baseurl }}/assets/downloads/minimal-project.zip
+  [Download the starter project (zip)]({{ site.baseurl }}/assets/downloads/minimal-project.zip)
 - Keep this repo’s layout (docs/content/raw) out of your paper project; it’s for this guide only.
 
 IMRaD scaffolding

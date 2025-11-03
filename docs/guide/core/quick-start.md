@@ -61,7 +61,7 @@ Glossary: zero‑jargon essentials (1 minute)
 - Claims log: a short list (`claims.md`) of non‑obvious statements with their sources, so you can verify later.
 
 Minimal workspace (example). Download the ready‑to‑use starter project:  
-{{ site.baseurl }}/assets/downloads/minimal-project.zip
+[Download starter project (zip)]({{ site.baseurl }}/assets/downloads/minimal-project.zip)
 ```
 paper-project/
   AGENTS.md
@@ -118,8 +118,8 @@ First-hour exercise (copy/paste into Cursor as file-scoped prompts)
        manuscript/tables/example.md. Use code to calculate and show
        code and outputs. Save code under analysis/scripts/01-table.py
        (or .R).
-       ```
-       See the Analysis guide → {{ site.baseurl }}{% link guide/core/analysis.md %}.
+      ```
+      [See the Analysis guide →]({{ site.baseurl }}{% link guide/core/analysis.md %}).
 
 4) Optional figure — choose your path
    - No‑code path (default):
@@ -153,7 +153,7 @@ First-hour exercise (copy/paste into Cursor as file-scoped prompts)
      claims.md. Flag any statement that lacks a source. Do not invent
      citations. Summarize gaps in claims.md.
      ```
-     See Accuracy for details → {{ site.baseurl }}{% link guide/core/accuracy.md %}.
+     [See Accuracy for details →]({{ site.baseurl }}{% link guide/core/accuracy.md %}).
 
 6) Export a shareable draft
    - If you have Pandoc: convert a merged Markdown draft to DOCX/PDF using your target journal’s CSL style. See Writing in Markdown for options ({{ site.baseurl }}{% link guide/core/writing-markdown.md %}).
