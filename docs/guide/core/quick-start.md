@@ -33,7 +33,7 @@ What is AGENTS.md (1 minute)
 - A short, human-readable rules file at the project root that tells coding agents how to work safely on your paper (file‑first edits, citation rules, and acceptance criteria).
 
 Copy‑paste minimal AGENTS.md
-```markdown
+```text
 # Project Agent Rules (Paper Title)
 
 Scope: All files in this project.
