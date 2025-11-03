@@ -16,7 +16,7 @@ What this covers
 - Redaction, minimal sharing, and synthetic examples for demos
 
 Key principles
-- Local‑first by default: keep private data on your machine; bring the model to the data when possible. Use cloud only when needed and acceptable under policy.
+- Local‑first by default: keep private data on your machine. In this guide’s scope, agents run inside your editor; avoid uploading sensitive content to external services. Use cloud calls only when necessary and approved under your policy, and prefer working on redacted or synthetic data when possible.
 - Minimum necessary access: in prompts, state exactly which files or folders the agent may read or change. Prefer read‑only dry runs first.
 - Approval gating: require a clear preview of changes and your explicit reply “CONFIRM APPLY” before any rename/move/install/execute.
 - Separate secrets: never paste raw credentials. Store secrets in platform keychains or `.env` files that are never committed; reference them indirectly if needed.
