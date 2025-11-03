@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & ideas
+    url: https://github.com/example/cursor-for-scientists/discussions
+    about: Start a discussion to share ideas, ask questions, or propose topics.

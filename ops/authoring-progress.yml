@@ -1,0 +1,81 @@
+entries:
+  - id: core/quick-start
+    path: content/guide/core/quick-start.md
+    status: complete
+    updated: 2025-11-03T15:01:07Z
+    notes: Softened goal/export language to make Markdown the default, figure/export optional.
+  - id: exercises/first-hour
+    path: content/exercises/first-hour.md
+    status: complete
+    updated: 2025-11-03T17:22:00Z
+    notes: Marked complete; tightened guardrails and cross-links.
+  - id: core/writing-markdown
+    path: content/guide/core/writing-markdown.md
+    status: complete
+    updated: 2025-11-03T17:34:00Z
+    notes: Marked complete; added footnote, export/math clarifications, and cross-links verified.
+  - id: core/accuracy
+    path: content/guide/core/accuracy.md
+    status: draft
+    updated: 2025-11-03T18:02:00Z
+    notes: Added page-number requirement, no-code numeric note, claims.md template, and privacy pointer.
+  - id: core/managing-sources
+    path: content/guide/core/managing-sources.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; organize PDFs and corpora.
+  - id: policies/data-governance
+    path: content/policies/data-governance.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; insert before Analysis.
+  - id: core/analysis
+    path: content/guide/core/analysis.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; "use code to calculate".
+  - id: core/project-rules
+    path: content/guide/core/project-rules.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; AGENTS.md guidance.
+  - id: core/endgame
+    path: content/guide/core/endgame.md
+    status: draft
+    updated: 2025-11-03T15:06:15Z
+    notes: Added Google Docs collaboration tip (Markdown auto-convert) and change log.
+  - id: core/checklists
+    path: content/guide/core/checklists.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; verification and drafting.
+  - id: plus/git
+    path: content/guide/plus/git.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; versioning in Cursor.
+  - id: plus/branching
+    path: content/guide/plus/branching.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; exploratory alternates.
+  - id: pro/mcp
+    path: content/guide/pro/mcp.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; MCP skills.
+  - id: pro/integrations
+    path: content/guide/pro/integrations.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; Claude Code and Codex.
+  - id: pro/multi-agent
+    path: content/guide/pro/multi-agent.md
+    status: pending
+    updated: 2025-11-03T16:06:00Z
+    notes: Pending; multi-agent workflows.
+  - id: guide/index
+    path: content/guide/index.md
+    status: complete
+    updated: 2025-11-03T16:48:00Z
+    notes: Overview drafted and aligned with TOC; ready for publish pass.
