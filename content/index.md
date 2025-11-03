@@ -3,8 +3,8 @@ layout: default
 title: Cursor for Scientists
 nav_order: 1
 has_children: true
+status: complete
 ---
-
 
 # AI agents for scientific writing
 
@@ -98,3 +98,4 @@ Researchers, students, and collaborators who want less friction and more auditab
 Cursor is a coding editor with AI agents that read and edit files. While built for coding, it doesn't really care what files it read and write. We repurpose it for science authoring using the versatile Markdown format because file‑first agents give precise, auditable drafts you control.
 
 [Start now →]({{ '/guide/core/quick-start/' | relative_url }})
+
