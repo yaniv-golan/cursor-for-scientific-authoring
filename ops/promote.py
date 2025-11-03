@@ -21,7 +21,7 @@ Rules
     - Set `nav_order` for known Core pages using a filename → order map.
 
 Usage
-    Dry run:   python3 ops/promote.py --dry-run
+    Dry run:   python3 ops/promote.py --dry-run   # prints DRY RUN header; writes nothing
     Apply:     python3 ops/promote.py
     Only some: python3 ops/promote.py --only content/guide/core/quick-start.md [...]
 """
@@ -165,13 +165,22 @@ def main() -> int:
             save_text(dest, out_text)
 
     # Report
+    if args.dry_run:
+        print("DRY RUN — no files were written. This is a preview.")
     print("Promote summary:")
     for src, dest in promoted:
-        print(f" + {src} → {dest}")
+        if args.dry_run:
+            print(f" ~ {src} → {dest}")
+        else:
+            print(f" + {src} → {dest}")
     for src, reason in skipped:
         print(f" - {src} (skipped: {reason})")
     if not promoted and not skipped:
         print("(no matching files)")
+    print(
+        f"Totals: {len(promoted)} promote, {len(skipped)} skipped"
+        + (" (dry run)" if args.dry_run else "")
+    )
     return 0
 
 
