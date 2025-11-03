@@ -8,6 +8,8 @@ has_children: true
 
 # AI agents for scientific writing
 
+![Cursor for Scientists banner]({{ site.baseurl }}/assets/images/banner.png)
+
 A developer tool, repurposed for research. Write faster with file‑first AI that shows every change before it lands. No code to start. AI agents code for you when you need numbers.
 
 [Start the First Hour →]({{ site.baseurl }}{% link guide/core/quick-start.md %})  
