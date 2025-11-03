@@ -73,7 +73,9 @@ What the promoter does
   - Ensures `layout: default`, removes `status`
   - Sets `grand_parent`/`parent` for Guide/Core/Plus/Pro; Getting Started; Resources
   - Assigns `nav_order` for core pages (Quick Start=10, Writing Markdown=20, Accuracy=30, Managing Sources=40, Analysis=50, Checklists=60, Project Rules=70, Endgame=80)
-- Link tip: use `{{ '/path/' | relative_url }}` in Markdown links so they work under the project `baseurl`.
+- Internal link tip: prefer `{{ site.baseurl }}{% link <docs-relative-path>.md %}` so links work under the project `baseurl` and survive renames.
+  - Example: `{{ site.baseurl }}{% link guide/core/quick-start.md %}`
+  - Avoid: `](/guide/...)`, `{{ '/path/' | relative_url }}`, or bare relative paths on published pages.
 
 Note: do not modify files in `raw/` (except updating `raw/claims.md` per `AGENTS.md`).
 

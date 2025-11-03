@@ -32,6 +32,7 @@ import pathlib
 import re
 import sys
 from typing import Dict, List, Tuple
+import textwrap
 
 RE_FM = re.compile(r"^---\s*$")
 
@@ -145,8 +146,9 @@ def main() -> int:
     ap.add_argument("--only", nargs="*", help="Promote only specific content file paths")
     args = ap.parse_args()
 
-    promoted = []
-    skipped = []
+    promoted: List[Tuple[pathlib.Path, pathlib.Path]] = []
+    skipped: List[Tuple[pathlib.Path, str]] = []
+    warnings: List[str] = []
 
     for src in discover_sources(args.only):
         if "templates/" in src.as_posix() or "raw/" in src.as_posix():
@@ -160,6 +162,32 @@ def main() -> int:
         dest = map_destination(src.relative_to(pathlib.Path.cwd())) if src.is_absolute() else map_destination(src)
         out_fm = augment_fm_for_destination(fm, dest)
         out_text = write_front_matter(out_fm, body)
+
+        # Pre-publish checks: warn if landing pages omit `site.baseurl` in links
+        try:
+            dest_rel = dest.as_posix()
+        except Exception:
+            dest_rel = str(dest)
+        if dest.name == "index.md":
+            # 1) `{% link ... %}` without preceding `{{ site.baseurl }}`
+            if re.search(r"\]\(\s*(?!\{\{\s*site\.baseurl\s*\}\}\s*\{\%\s*link)\{\%\s*link", out_text):
+                warnings.append(
+                    "WARN "
+                    + dest_rel
+                    + ": use `{{ site.baseurl }}{% link ... %}` for internal links on landing pages"
+                )
+            # 2) Absolute root URLs like `](/guide/...)`
+            if re.search(r"\]\(/", out_text):
+                warnings.append(
+                    "WARN " + dest_rel + ": root-relative links detected; prefix with `{{ site.baseurl }}`"
+                )
+            # 3) `relative_url` filter
+            if "relative_url" in out_text:
+                warnings.append(
+                    "WARN "
+                    + dest_rel
+                    + ": `relative_url` found; prefer `{{ site.baseurl }}{% link ... %}`"
+                )
         promoted.append((src, dest))
         if not args.dry_run:
             save_text(dest, out_text)
@@ -177,6 +205,10 @@ def main() -> int:
         print(f" - {src} (skipped: {reason})")
     if not promoted and not skipped:
         print("(no matching files)")
+    if warnings:
+        print("\nPre-publish warnings:")
+        for w in warnings:
+            print(" ! ", w)
     print(
         f"Totals: {len(promoted)} promote, {len(skipped)} skipped"
         + (" (dry run)" if args.dry_run else "")

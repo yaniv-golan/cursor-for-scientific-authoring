@@ -48,6 +48,11 @@ Convenience commands
 - Treat `raw/claims.md` as the fact-checked source of truth—align new guidance with the claims it records or update the catalogue first if new evidence emerges.
 - Do not present this repository’s layout as a template for research projects; it is a production layout for the guide only.
 
+### Internal links (for agents)
+- When linking between site pages, always emit `{{ site.baseurl }}{% link <docs-relative-path>.md %}`.
+  - Example: `{{ site.baseurl }}{% link guide/core/accuracy.md %}`.
+  - Avoid root‑relative `](/guide/...)`, bare relative paths, or `relative_url` on published pages. This prevents 404s under GitHub Pages `baseurl` and survives file renames.
+
 ## Publishing & Versioning (for agents)
 
 - Publishing is automated via GitHub Actions (`.github/workflows/pages.yml`). Any push to `main` that changes `docs/**`, `docs/_config.yml`, `assets/**`, `references/**`, or `ops/**` will build and deploy the site to GitHub Pages.
