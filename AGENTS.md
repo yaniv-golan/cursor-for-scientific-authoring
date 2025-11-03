@@ -46,14 +46,14 @@
 
 ## Publishing & Versioning (for agents)
 
-- Publishing is automated via GitHub Actions (`.github/workflows/pages.yml`). Any push to `main` that changes `docs/**`, `_config.yml`, `assets/**`, `references/**`, or `ops/**` will build and deploy the site to GitHub Pages.
+- Publishing is automated via GitHub Actions (`.github/workflows/pages.yml`). Any push to `main` that changes `docs/**`, `docs/_config.yml`, `assets/**`, `references/**`, or `ops/**` will build and deploy the site to GitHub Pages.
 - Only promote stable, reader-ready material into `docs/`. Keep drafts in `content/` until vetted against `raw/claims.md`.
-- Canonical URLs are set in `_config.yml` (`url` and `baseurl`). Do not change them unless the repo name or user/org changes.
+- Canonical URLs are set in `docs/_config.yml` (`url` and `baseurl`). Do not change them unless the repo name or user/org changes.
 
 ### Release checklist
 
 1. Ensure new or updated pages in `docs/` have correct front matter (layout, title, parent, nav_order) and cross-links.
-2. Bump `_config.yml: version` (semantic version, e.g., `0.2.0`).
+2. Bump `docs/_config.yml: version` (semantic version, e.g., `0.2.0`).
 3. Update `docs/changelog.md` with the new version and date.
 4. Commit and push to `main`; verify the Pages workflow succeeds.
 5. Tag and push: `git tag -a vX.Y.Z -m "Release vX.Y.Z" && git push --tags`.
