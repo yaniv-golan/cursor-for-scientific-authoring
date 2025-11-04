@@ -11,6 +11,11 @@ Purpose: protect sensitive information while keeping work auditable and reproduc
 
 Note: IDE agents typically transmit your prompts and selected file excerpts to the configured model provider for inference. Treat any text included in prompts/context as leaving your device unless your client explicitly guarantees local inference.
 
+How Cursor handles data (links)
+- Data Use & Privacy Overview: https://cursor.com/data-use
+- Review (proposed changes before apply): https://cursor.com/docs/agent/review
+- @ Symbols (scoping files in context): https://cursor.com/docs/context/symbols
+
 What this covers
 - What agents can access (local vs. cloud execution; model/vendor differences)
 - Approval gates and auditable logs for commands and code

@@ -1,9 +1,7 @@
 ---
 title: Getting Started
-layout: default
-parent: Getting Started
+status: complete
 ---
-
 
 # Getting Started
 
@@ -32,3 +30,4 @@ What’s next
 
 Change log
 - 2025‑11‑04: Initial content version created (moved from outline; aligned links and tone).
+

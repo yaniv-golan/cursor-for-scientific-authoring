@@ -11,5 +11,4 @@ just_the_docs:
     Project GitHub: https://github.com/yaniv-golan/cursor-for-scientific-authoring
   footer_content: "Released under the Creative Commons Attribution 4.0 International License."
 nav_order: 1
-version: 0.1.0
-
+version: 0.2.0

@@ -1,8 +1,7 @@
 ---
 title: Case Studies
-layout: default
+status: complete
 ---
-
 
 # Case Studies
 
@@ -34,3 +33,4 @@ What’s next
 
 Change log
 - 2025‑11‑04: Initial case‑study index and contribution template.
+

@@ -1,9 +1,7 @@
 ---
 title: Resources
-layout: default
-parent: Resources
+status: complete
 ---
-
 
 # Resources
 
@@ -22,3 +20,4 @@ What’s next
 
 Change log
 - 2025‑11‑04: Initial resources index with cross‑links and downloads.
+

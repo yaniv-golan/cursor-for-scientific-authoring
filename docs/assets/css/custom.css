@@ -27,3 +27,22 @@ pre code.language-text {
   background: #f8f9fa;
   cursor: pointer;
 }
+
+/* Minimal buttons for hero CTAs */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  line-height: 1.2;
+  border: 1px solid transparent;
+}
+
+.btn-small { padding: 0.35rem 0.7rem; font-size: 0.9rem; }
+
+.btn-starter {
+  background: #2563eb;         /* accessible blue */
+  color: #fff !important;
+  border-color: #1d4ed8;
+}
+.btn-starter:hover { background: #1d4ed8; }

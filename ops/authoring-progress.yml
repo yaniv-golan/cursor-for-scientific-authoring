@@ -2,7 +2,7 @@ entries:
   - id: core/quick-start
     path: content/guide/core/quick-start.md
     status: complete
-    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    updated: 2025-11-04T12:41:35Z
     notes: Added audience one-liner and a zero-jargon glossary; kept simple-first tone.
   - id: exercises/first-hour
     path: content/exercises/first-hour.md
@@ -12,27 +12,27 @@ entries:
   - id: core/writing-markdown
     path: content/guide/core/writing-markdown.md
     status: complete
-    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    updated: 2025-11-04T12:41:35Z
     notes: Added audience one-liner and fixed front matter; maintained cross-links.
   - id: core/accuracy
     path: content/guide/core/accuracy.md
     status: complete
-    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    updated: 2025-11-04T12:41:35Z
     notes: Added audience one-liner; preserved audit prompt and guardrails.
   - id: core/managing-sources
     path: content/guide/core/managing-sources.md
     status: complete
-    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    updated: 2025-11-04T12:41:35Z
     notes: Added audience one-liner; kept approval-gated notes index and cross-links.
   - id: policies/data-governance
     path: content/policies/data-governance.md
     status: complete
-    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    updated: 2025-11-04T12:41:35Z
     notes: Completed page with local-first guidance, approval gating, safe prompts, and cross-links.
   - id: core/analysis
     path: content/guide/core/analysis.md
     status: complete
-    updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+    updated: 2025-11-04T12:41:35Z
     notes: Added audience one-liner and beginner notes; maintained prompts and examples.
   - id: core/project-rules
     path: content/guide/core/project-rules.md
@@ -79,3 +79,28 @@ entries:
     status: complete
     updated: 2025-11-04T01:13:00Z
     notes: Marked complete; converted cross-links to site link tags and finalized copy.
+  - id: site/index
+    path: content/index.md
+    status: complete
+    updated: 2025-11-04T12:41:35Z
+    notes: Added to ledger for completeness; tracks site landing page not in the orchestrator mapping.
+  - id: getting-started/overview
+    path: content/getting-started/overview.md
+    status: complete
+    updated: 2025-11-04T12:45:47Z
+    notes: Converted outline to content; aligned links and added What’s next.
+  - id: workflows/index
+    path: content/workflows/index.md
+    status: complete
+    updated: 2025-11-04T12:45:47Z
+    notes: First version with exemplar workflows and review checklist.
+  - id: case-studies/index
+    path: content/case-studies/index.md
+    status: complete
+    updated: 2025-11-04T12:45:47Z
+    notes: Case-study index and contribution template added.
+  - id: resources/index
+    path: content/resources/index.md
+    status: complete
+    updated: 2025-11-04T12:45:47Z
+    notes: Resources index with links to style, governance, and downloads.

@@ -1,8 +1,7 @@
 ---
 title: Workflows
-layout: default
+status: complete
 ---
-
 
 # Workflows
 
@@ -35,3 +34,4 @@ What’s next
 
 Change log
 - 2025‑11‑04: First version with three exemplar workflows and links.
+
